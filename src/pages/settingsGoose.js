@@ -2,7 +2,7 @@ import React from "react";
 import theme from "theme";
 import { Theme, Link, Strong, Span, Text, Input, Image, Box } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
-import { Override, Section, Stack, StackItem, SocialMedia } from "@quarkly/components";
+import { Override, Section, StackItem, Stack, SocialMedia } from "@quarkly/components";
 import * as Components from "components";
 export default (() => {
 	return <Theme theme={theme}>
@@ -105,13 +105,31 @@ export default (() => {
 								text-align="left"
 								margin="16px 0px 16px 20px"
 								color="--primary"
-								width="50%"
+								width="40px"
 							>
 								IED 1
 							</Text>
+							<Stack>
+								{"    "}
+								<StackItem width="50%" display="flex">
+									{"        "}
+									<Text font="--lead" margin="0px 0px 0px 0px" display="inline-block">
+										{"            "}First Item{"\n        "}
+									</Text>
+									{"    "}
+								</StackItem>
+								{"    "}
+								<StackItem width="50%" display="flex">
+									{"        "}
+									<Text font="--lead" margin="0px 0px 0px 0px" display="inline-block">
+										{"            "}Second Item{"\n        "}
+									</Text>
+									{"    "}
+								</StackItem>
+							</Stack>
 							<Stack height="36px" margin="0 -16px -31px -16px">
 								{"    "}
-								<Text font="normal 500 24px/1.2 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif" margin="0px 0px 0px 10px" display="inline-block">
+								<Text font="normal 500 24px/1.2 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif" margin="0px 0px 0px 10px" display="inline-block" width="50%">
 									Выход 1{" "}
 									<br />
 									{"\n\n\n"}
