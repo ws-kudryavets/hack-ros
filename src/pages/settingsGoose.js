@@ -31,7 +31,7 @@ export default (() => {
 					text-overflow="clip"
 					hyphens="manual"
 				>
-					Задание 1.{" \n\n"}
+					Задание 3.{"  "}
 				</Strong>
 				<Span
 					overflow-wrap="normal"
@@ -41,12 +41,35 @@ export default (() => {
 					text-overflow="clip"
 					hyphens="manual"
 				>
-					Настройка IED на прием-передачу GOOSE-сообщений{" \n"}
+					Тренажёр{" "}
+				</Span>
+				<Strong
+					overflow-wrap="normal"
+					word-break="normal"
+					white-space="normal"
+					text-indent="0"
+					text-overflow="clip"
+					hyphens="manual"
+				>
+					«
+				</Strong>
+				<Span
+					overflow-wrap="normal"
+					word-break="normal"
+					white-space="normal"
+					text-indent="0"
+					text-overflow="clip"
+					hyphens="manual"
+				>
+					Настройка IED на прием-передачу GOOSE-сообщений»{"  "}
 					<br />
 					{"\n\n\n"}
 				</Span>
 			</Text>
 		</Section>
+		<Components.Track>
+			<Override slot="image" src="https://uploads.quarkly.io/5fae1bc508b41a001fec14bc/images/3.svg?v=2020-11-14T20:53:34.392Z" />
+		</Components.Track>
 		<Section
 			padding="64px 0 64px 0"
 			sm-padding="40px 0"
@@ -64,7 +87,7 @@ export default (() => {
 					width="60%"
 					lg-width="100%"
 					lg-order="2"
-					margin="20px 0px 0px 0px"
+					margin="0 0px 0px 0px"
 					background="--color-light"
 				>
 					<Override slot="StackItemContent" text-align="center" background="--color-light" height="500px" />

@@ -18,7 +18,8 @@ export default {
 				"5fb02281b83a2f001f2de3ff",
 				"5fb027592c4ef2001e3252da",
 				"5fae1bc508b41a001fec14d1",
-				"5fb040ca08b41a001fec2044"
+				"5fb040ca08b41a001fec2044",
+				"5fb0435579530b001fd271ac"
 			]
 		},
 		"5fae1bc508b41a001fec14d1": {
@@ -88,7 +89,7 @@ export default {
 		"5fb021258996cc001edce0a2": {
 			"id": "5fb021258996cc001edce0a2",
 			"pageUrl": "settings-goose",
-			"name": "settings-goose"
+			"name": "switch"
 		},
 		"5fb02281b83a2f001f2de3ff": {
 			"id": "5fb02281b83a2f001f2de3ff",
@@ -109,6 +110,11 @@ export default {
 			"id": "5fb040ca08b41a001fec2044",
 			"pageUrl": "goose4",
 			"name": "index"
+		},
+		"5fb0435579530b001fd271ac": {
+			"id": "5fb0435579530b001fd271ac",
+			"pageUrl": "oehoy",
+			"name": "oehoy"
 		}
 	},
 	"mode": "production",
