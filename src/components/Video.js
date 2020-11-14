@@ -1,6 +1,5 @@
 import React from "react";
 import { useOverrides, Section } from "@quarkly/components";
-import { Image } from "@quarkly/widgets";
 const defaultProps = {
 	"background": "--color-darkL2"
 };
@@ -16,15 +15,13 @@ const overrides = {
 
 const Video = props => {
 	const {
-		override,
-		children,
 		rest
 	} = useOverrides(props, overrides, defaultProps);
 	return <Section {...rest}>
 		<div style={{
 			width: '100%'
 		}}>
-			<iframe width="100%" height="315" src="https://www.youtube.com/watch?v=tR1ECf4sEpw&feature=youtu.be&t=52"></iframe>
+			<iframe title="video" width="100%" height="315" src="https://www.youtube.com/watch?v=tR1ECf4sEpw&feature=youtu.be&t=52"></iframe>
 		</div>
 	</Section>;
 };
