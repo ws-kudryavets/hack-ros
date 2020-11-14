@@ -81,12 +81,10 @@ const Box = ({
 			opacity: monitor.isDragging() ? 0.4 : 1
 		})
 	});
-	return <div ref={drag} style={{ ...styleBox,
-		opacity
-	}}>
+	return <div ref={drag} style={style}>
 		{isDropped ? <s>
-			{name}
-		</s> : name}
+			<CompStandart />
+		</s> : <CompStandart />}
 	</div>;
 };
 

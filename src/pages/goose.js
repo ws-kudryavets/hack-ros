@@ -176,31 +176,9 @@ export default (() => {
 						<Stack width="400px">
 							{"    "}{"    "}
 						</Stack>
-						<StackItem>
-							<Override slot="StackItemContent" height="200px" />
-							<Components.CompStandart margin="0px 0px 0px 0px" height="200px" width="300px">
-								<Override
-									slot="box"
-									background="url(https://uploads.quarkly.io/5fae1bc508b41a001fec14bc/images/30-01-01.jpg?v=2020-11-14T10:38:26.003Z) 50% 0/cover no-repeat"
-									height="150px"
-									width="290px"
-									padding="0 0px 0px 0px"
-									margin="5px auto 0 auto"
-								/>
-								<Override
-									slot="StackItemContent"
-									margin="0px 0px 0px 324px"
-									width="100%"
-									background="#ffffff"
-									opacity="0.3"
-									box-shadow="inset 0 0 20px 0 rgba(6, 15, 40, 0.46)"
-								/>
-								<Override slot="link" text-align="center" margin="10px 0px 10px 0px">
-									Коммутатор
-									<br />
-									{"\n\n\n"}
-								</Override>
-							</Components.CompStandart>
+						<StackItem display="flex" align-items="center" justify-content="center">
+							<Override slot="StackItemContent" height="200px" justify-content="center" />
+							<Components.Commutator />
 						</StackItem>
 						<Section padding="0 0 0 0" margin="36px 0 0 0">
 							<Override slot="SectionContent" margin="-10px 44.3125px 10px 44.3125px" padding="0px 0px 0 0px" />
