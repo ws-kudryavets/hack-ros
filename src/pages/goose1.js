@@ -81,17 +81,16 @@ export default (() => {
 						border-color="--color-primary"
 						background="#ffffff"
 					>
-						<Stack margin="0 -16px -16px -16px" height="150px">
+						<Stack margin="0 -16px -16px -16px" height="217px">
 							{"    "}
 							<Components.Comp2 />
 							<Components.Comp2 margin="10px 0px 0px 280px" />
 							{"    "}
 						</Stack>
-						<Section />
 						<Stack width="400px">
 							{"    "}{"    "}
 						</Stack>
-						<Box height="80px" />
+						<Box height="54px" />
 						<StackItem>
 							<Override slot="StackItemContent" height="200px" />
 							<StackItem width="100%" sm-width="100%" margin="0px 0px 0px 220px">

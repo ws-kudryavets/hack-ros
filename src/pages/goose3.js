@@ -283,8 +283,21 @@ export default (() => {
 						<br />
 						{"\n\n\n"}
 					</Text>
-					<Components.BlueButton width="60%" disabled margin="26px 0px 0px 0px">
-						Сохранить
+					<Components.BlueButton width="60%" disabled={false} margin="26px 0px 0px 0px" type="button">
+						<Link
+							href="goose1"
+							overflow-wrap="normal"
+							word-break="normal"
+							white-space="normal"
+							text-indent="0"
+							text-overflow="clip"
+							hyphens="manual"
+							quarkly-title="LinkC"
+							color="#fff"
+							text-decoration-line="initial"
+						>
+							Сохранить
+						</Link>
 					</Components.BlueButton>
 				</StackItem>
 			</Stack>

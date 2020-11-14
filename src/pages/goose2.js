@@ -105,8 +105,20 @@ export default (() => {
 					</Section>
 					<StackItem>
 						<Override slot="StackItemContent" margin="40px 0px 0px 0px" />
-						<Components.BlueButton width="60%" disabled>
-							Сохранить
+						<Components.BlueButton width="60%" disabled={false} type="button">
+							<Link
+								href="goose1"
+								overflow-wrap="normal"
+								word-break="normal"
+								white-space="normal"
+								text-indent="0"
+								text-overflow="clip"
+								hyphens="manual"
+								color="#fff"
+								text-decoration-line="initial"
+							>
+								Сохранить
+							</Link>
 						</Components.BlueButton>
 					</StackItem>
 				</StackItem>
