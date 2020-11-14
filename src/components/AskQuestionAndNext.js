@@ -62,7 +62,7 @@ const overrides = {
 		"props": {
 			"width": "100%",
 			"children": <Link
-				href="goose"
+				href="goose-test"
 				overflow-wrap="normal"
 				word-break="normal"
 				white-space="normal"
