@@ -94,9 +94,7 @@ export default (() => {
 				<StackItem width="70%" lg-width="100%">
 					<Override slot="StackItemContent" lg-margin-bottom="24px" flex-direction="column" />
 					<Text color="--grey" letter-spacing="1px" margin="0 0 10px 0" font="normal 500 20px/1.5 --fontFamily-sans">
-						Системный администратор опечатался при настройке параметров подключения{" "}
-						<br />
-						к сети. Исправьте ошибку и проверьте соединение.
+						Системный администратор опечатался при настройке параметров подключения к сети. Исправьте ошибку и проверьте соединение.
 					</Text>
 					<Box
 						height="540px"

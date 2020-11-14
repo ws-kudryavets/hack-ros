@@ -17,7 +17,8 @@ export default {
 				"5fb022f38996cc001edce0b4",
 				"5fb02281b83a2f001f2de3ff",
 				"5fb027592c4ef2001e3252da",
-				"5fae1bc508b41a001fec14d1"
+				"5fae1bc508b41a001fec14d1",
+				"5fb040ca08b41a001fec2044"
 			]
 		},
 		"5fae1bc508b41a001fec14d1": {
@@ -103,6 +104,11 @@ export default {
 			"id": "5fb027592c4ef2001e3252da",
 			"pageUrl": "goose31",
 			"name": "lesson 4-2"
+		},
+		"5fb040ca08b41a001fec2044": {
+			"id": "5fb040ca08b41a001fec2044",
+			"pageUrl": "goose4",
+			"name": "index"
 		}
 	},
 	"mode": "production",

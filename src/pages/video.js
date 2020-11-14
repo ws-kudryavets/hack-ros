@@ -86,7 +86,9 @@ export default (() => {
 						{"    "}
 					</StackItem>
 				</StackItem>
-				<Components.AskQuestionAndNext />
+				<Components.AskQuestionAndNext>
+					<Override slot="section" height="97px" />
+				</Components.AskQuestionAndNext>
 			</Stack>
 		</Section>
 		<Section height="40px" quarkly-title="Footer">

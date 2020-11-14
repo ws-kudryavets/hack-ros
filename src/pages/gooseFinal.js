@@ -111,7 +111,19 @@ export default (() => {
 							<StackItem margin="0px 0px 0px 37px">
 								<Override slot="StackItemContent" flex-direction="column" align-items="center" justify-content="flex-start" />
 								<Button height="36px">
-									Отправить
+									<Link
+										href="goose11"
+										overflow-wrap="normal"
+										word-break="normal"
+										white-space="normal"
+										text-indent="0"
+										text-overflow="clip"
+										hyphens="manual"
+										color="#fff"
+										text-decoration-line="initial"
+									>
+										Отправить
+									</Link>
 								</Button>
 								<Icon
 									category="md"
