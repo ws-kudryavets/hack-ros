@@ -72,7 +72,7 @@ export default (() => {
 									text-overflow="clip"
 									hyphens="manual"
 								>
-									Занятие 1
+									Тема 1
 								</Span>
 							</Strong>
 						</Span>

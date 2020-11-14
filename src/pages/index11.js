@@ -2,7 +2,7 @@ import React from "react";
 import theme from "theme";
 import { Theme, Link, Strong, Span, Text, Box, Image } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
-import { Override, StackItem, Section, Stack, SocialMedia } from "@quarkly/components";
+import { Override, Section, StackItem, Stack, SocialMedia } from "@quarkly/components";
 import * as Components from "components";
 export default (() => {
 	return <Theme theme={theme}>
@@ -15,10 +15,7 @@ export default (() => {
 		</Helmet>
 		<Components.MenuTech />
 		<Section color="--light" padding="50px 0 50px 0" sm-padding="40px 0" position="relative">
-			<Override slot="SectionContent" height="70px" />
-			<StackItem width="50%" md-width="100%">
-				<Override slot="StackItemContent" flex-direction="column" />
-			</StackItem>
+			<Override slot="SectionContent" />
 			<Text
 				as="p"
 				margin="6px 0"
@@ -73,62 +70,63 @@ export default (() => {
 								border-radius={0}
 								height="120px"
 							/>
-							<Link href="#" font="normal 500 18px/1.2 --fontFamily-sans" margin="20px 0px 10px 0px">
+							<Link href="https://www.mtrele.ru/shop/relejnaya-zashhita/bmrz/" font="normal 500 18px/1.2 --fontFamily-sans" margin="20px 0px 10px 0px">
 								РЗА IED 2
 								<br />
 								{"\n\n\n"}
 							</Link>
 						</StackItem>
 						<StackItem width="50%" sm-width="100%" height="200px">
-							<Override slot="StackItemContent" flex-direction="column" background="--color-lightD1" box-shadow="2px 4px 10px 0 rgba(0, 0, 0, 0.28)" />
+							<Override slot="StackItemContent" flex-direction="column" box-shadow="2px 4px 10px 0 rgba(0, 0, 0, 0.28)" background="#ffffff" />
 							<Box
 								width="100%"
 								margin="0 auto"
-								background="url(https://uploads.quarkly.io/5fae1bc508b41a001fec14bc/images/29-01-01.jpg?v=2020-11-14T07:29:20.309Z) 50% 0/cover no-repeat"
+								background="url(https://uploads.quarkly.io/5fae1bc508b41a001fec14bc/images/29-01-01.jpg?v=2020-11-14T10:30:35.471Z) 50% 0/cover no-repeat"
 								border-radius={0}
 								height="120px"
 							/>
-							<Link href="#" font="normal 500 18px/1.2 --fontFamily-sans" margin="20px 0px 10px 0px">
-								РЗА
+							<Link href="http://files.qtech.ru/public/datasheets/products/switchers/QSW-3750/QSW-3750-12T-I-POE-DC/836K_020719_QSW-3750-12T-I_r4_datasheet.pdf" font="normal 500 18px/1.2 --fontFamily-sans" margin="20px 0px 10px 0px">
+								Коммутатор
 							</Link>
 						</StackItem>
 						<StackItem width="50%" sm-width="100%" height="200px">
-							<Override slot="StackItemContent" flex-direction="column" background="--color-lightD1" box-shadow="2px 4px 10px 0 rgba(0, 0, 0, 0.28)" />
+							<Override slot="StackItemContent" flex-direction="column" box-shadow="2px 4px 10px 0 rgba(0, 0, 0, 0.28)" background="#ffffff" />
 							<Box
 								width="100%"
 								margin="0 auto"
-								background="url(https://uploads.quarkly.io/5fae1bc508b41a001fec14bc/images/photo_2020-11-14_00-17-22.jpg?v=2020-11-14T05:14:12.201Z) 50% 0/cover no-repeat"
+								background="url(https://uploads.quarkly.io/5fae1bc508b41a001fec14bc/images/29-01-05.jpg?v=2020-11-14T09:37:16.129Z) 50% 0/cover no-repeat"
 								border-radius={0}
 								height="120px"
 							/>
 							<Link href="#" font="normal 500 18px/1.2 --fontFamily-sans" margin="20px 0px 10px 0px">
-								РЗА
+								Кабель 
+RS485
 							</Link>
 						</StackItem>
 						<StackItem width="50%" sm-width="100%" height="200px">
-							<Override slot="StackItemContent" flex-direction="column" background="--color-lightD1" box-shadow="2px 4px 10px 0 rgba(0, 0, 0, 0.28)" />
+							<Override slot="StackItemContent" flex-direction="column" box-shadow="2px 4px 10px 0 rgba(0, 0, 0, 0.28)" background="#ffffff" />
 							<Box
 								width="100%"
 								margin="0 auto"
-								background="url(https://uploads.quarkly.io/5fae1bc508b41a001fec14bc/images/photo_2020-11-14_00-17-22.jpg?v=2020-11-14T05:14:12.201Z) 50% 0/cover no-repeat"
+								background="url(https://uploads.quarkly.io/5fae1bc508b41a001fec14bc/images/29-01-06.jpg?v=2020-11-14T09:37:16.369Z) 50% 0/cover no-repeat"
 								border-radius={0}
 								height="120px"
 							/>
 							<Link href="#" font="normal 500 18px/1.2 --fontFamily-sans" margin="20px 0px 10px 0px">
-								РЗА
+								Кабель USB  A-B
 							</Link>
 						</StackItem>
 						<StackItem width="50%" sm-width="100%" height="200px">
-							<Override slot="StackItemContent" flex-direction="column" background="--color-lightD1" box-shadow="2px 4px 10px 0 rgba(0, 0, 0, 0.28)" />
+							<Override slot="StackItemContent" flex-direction="column" box-shadow="2px 4px 10px 0 rgba(0, 0, 0, 0.28)" background="#ffffff" />
 							<Box
 								width="100%"
 								margin="0 auto"
-								background="url(https://uploads.quarkly.io/5fae1bc508b41a001fec14bc/images/photo_2020-11-14_00-17-22.jpg?v=2020-11-14T05:14:12.201Z) 50% 0/cover no-repeat"
+								background="url(https://uploads.quarkly.io/5fae1bc508b41a001fec14bc/images/29-01-07.jpg?v=2020-11-14T09:37:16.127Z) 50% 0/cover no-repeat"
 								border-radius={0}
 								height="120px"
 							/>
 							<Link href="#" font="normal 500 18px/1.2 --fontFamily-sans" margin="20px 0px 10px 0px">
-								РЗА
+								Патч-корд
 							</Link>
 						</StackItem>
 					</Stack>
@@ -146,22 +144,57 @@ export default (() => {
 						border-color="--color-primary"
 						background="#ffffff"
 					>
-						<Stack>
+						<Stack margin="0 -16px -16px -16px">
 							{"    "}
-							<Components.CompStandart width="30%" margin="0px 0px 0px 60px">
+							<Components.CompStandart width="20%" margin="10px 0px 0px 100px" opacity="0.3" box-shadow="inset 0 0 10px 0 rgba(6, 15, 40, 0.78)">
 								<Override slot="link" text-align="center" />
-								<Override slot="StackItemContent" background="#ffffff" />
+								<Override slot="StackItemContent" background="#ffffff" box-shadow="0 0 0 0 0px" />
 							</Components.CompStandart>
-							<Components.CompStandart width="30%" margin="0px 0px 0px 250px">
+							<Components.CompStandart width="20%" margin="10px 0px 0px 280px" box-shadow="inset 0 0 10px 0 rgba(6, 15, 40, 0.78)" opacity="0.3">
 								<Override slot="link" text-align="center" />
-								<Override slot="StackItemContent" background="#ffffff" />
-								<Override slot="box" />
+								<Override slot="StackItemContent" background="#ffffff" box-shadow="0 0 0 0 0px" />
+								<Override slot="box" width="100%" height="120px" />
 							</Components.CompStandart>
-							<StackItem width="50%" display="flex">
-								{"        "}{"    "}
-							</StackItem>
 							{"    "}
 						</Stack>
+						<Section />
+						<Stack width="400px">
+							{"    "}{"    "}
+						</Stack>
+						<StackItem>
+							<Override slot="StackItemContent" height="200px" />
+							<Components.CompStandart margin="0px 0px 0px 220px" height="200px" width="460px">
+								<Override
+									slot="box"
+									background="url(https://uploads.quarkly.io/5fae1bc508b41a001fec14bc/images/29-01.jpg?v=2020-11-14T09:06:41.165Z) 50% 0/cover no-repeat"
+									height="150px"
+									width="300px"
+									padding="0 0px 0px 0px"
+									margin="5px auto 0 auto"
+								/>
+								<Override
+									slot="StackItemContent"
+									margin="0px 0px 0px 60px"
+									width="80%"
+									background="#ffffff"
+									opacity="0.3"
+									box-shadow="inset 0 0 10px 0 rgba(6, 15, 40, 0.78)"
+								/>
+								<Override slot="link" text-align="center" margin="10px 0px 10px 0px">
+									Коммутатор
+									<br />
+									{"\n\n\n"}
+								</Override>
+							</Components.CompStandart>
+						</StackItem>
+						<Section padding="0 0 0 0" margin="36px 0 0 0">
+							<Override slot="SectionContent" margin="0px 44.3125px 10px 44.3125px" padding="0px 0px 0 0px" />
+							<Components.BorderButton width="60%" margin="0px 0px 10px 190px" padding="8px 10px 8px 10px">
+								Подписки GOOSE-сообщений{" \n"}
+								<br />
+								{"\n\n\n"}
+							</Components.BorderButton>
+						</Section>
 					</Box>
 				</StackItem>
 			</Stack>

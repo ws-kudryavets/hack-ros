@@ -7,7 +7,7 @@ export default {
 			"children": [
 				"5fae1bc508b41a001fec14d3",
 				"5faf018ab1c8af001eb51fc6",
-				"5faf7b36b83a2f001f2dddb3",
+				"5fafa665b83a2f001f2ddf30",
 				"5faf20f78996cc001edcd9b8",
 				"5faf042d08b41a001fec194a",
 				"5fae1bc508b41a001fec14d5",
@@ -86,10 +86,10 @@ export default {
 			"pageUrl": "index11",
 			"name": "1 lesson"
 		},
-		"5faf7b36b83a2f001f2dddb3": {
-			"id": "5faf7b36b83a2f001f2dddb3",
+		"5fafa665b83a2f001f2ddf30": {
+			"id": "5fafa665b83a2f001f2ddf30",
 			"pageUrl": "index111",
-			"name": "1-2 lesson"
+			"name": "1 lessona video"
 		}
 	},
 	"mode": "production",

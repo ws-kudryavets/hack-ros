@@ -1,9 +1,10 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Strong, Span, Text, Box, Image } from "@quarkly/widgets";
+import { Theme, Link, Strong, Span, Text, Box, Icon, Image } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
-import { Override, StackItem, Section, Stack, SocialMedia } from "@quarkly/components";
+import { Override, Section, Stack, StackItem, SocialMedia } from "@quarkly/components";
 import * as Components from "components";
+import { AiOutlineDislike, AiOutlineLike } from "react-icons/ai";
 export default (() => {
 	return <Theme theme={theme}>
 		<Helmet>
@@ -15,10 +16,7 @@ export default (() => {
 		</Helmet>
 		<Components.MenuTech />
 		<Section color="--light" padding="50px 0 50px 0" sm-padding="40px 0" position="relative">
-			<Override slot="SectionContent" height="70px" />
-			<StackItem width="50%" md-width="100%">
-				<Override slot="StackItemContent" flex-direction="column" />
-			</StackItem>
+			<Override slot="SectionContent" width="100%" />
 			<Text
 				as="p"
 				margin="6px 0"
@@ -34,7 +32,7 @@ export default (() => {
 					text-overflow="clip"
 					hyphens="manual"
 				>
-					Задание 1.{" \n\n"}
+					Тема 1.{" \n\n"}
 				</Strong>
 				<Span
 					overflow-wrap="normal"
@@ -58,141 +56,67 @@ export default (() => {
 			background="--color-light"
 		>
 			<Stack>
-				<StackItem width="30%" lg-width="100%" lg-order="2">
-					<Override slot="StackItemContent" text-align="center" />
-					<Stack>
-						<StackItem width="50%" sm-width="100%" height="200px">
-							<Override slot="StackItemContent" flex-direction="column" box-shadow="2px 4px 10px 0 rgba(0, 0, 0, 0.28)" background="#ffffff" />
-							<Box
-								width="100%"
-								height="120px"
-								margin="0 auto"
-								background="url(https://uploads.quarkly.io/5fae1bc508b41a001fec14bc/images/29-01-02.jpg?v=2020-11-14T07:28:13.307Z) 50% 0/cover no-repeat"
-								border-radius={0}
-							/>
-							<Link href="#" font="normal 500 18px/1.2 --fontFamily-sans" margin="20px 0px 10px 0px">
-								IED РЗА{" \n"}
-								<br />
-								{"\n\n\n"}
-							</Link>
-						</StackItem>
-						<StackItem width="50%" sm-width="100%" height="200px">
-							<Override slot="StackItemContent" flex-direction="column" box-shadow="2px 4px 10px 0 rgba(0, 0, 0, 0.28)" background="#ffffff" />
-							<Box
-								width="100%"
-								margin="0 auto"
-								background="url(https://uploads.quarkly.io/5fae1bc508b41a001fec14bc/images/29-01-01.jpg?v=2020-11-14T07:29:20.309Z) 50% 0/cover no-repeat"
-								border-radius={0}
-								height="120px"
-							/>
-							<Link href="#" font="normal 500 18px/1.2 --fontFamily-sans" margin="20px 0px 10px 0px">
-								Коммутатор
-							</Link>
-						</StackItem>
-						<StackItem width="50%" sm-width="100%" height="200px">
-							<Override slot="StackItemContent" flex-direction="column" box-shadow="2px 4px 10px 0 rgba(0, 0, 0, 0.28)" />
-							<Box
-								width="100%"
-								margin="0 auto"
-								background="url(https://uploads.quarkly.io/5fae1bc508b41a001fec14bc/images/photo_2020-11-14_00-17-22.jpg?v=2020-11-14T05:14:12.201Z) 50% 0/cover no-repeat"
-								border-radius={0}
-								height="120px"
-							/>
-							<Link href="#" font="normal 500 18px/1.2 --fontFamily-sans" margin="20px 0px 10px 0px">
-								Соединение
-							</Link>
-						</StackItem>
-						<StackItem width="50%" sm-width="100%" height="200px">
-							<Override slot="StackItemContent" flex-direction="column" box-shadow="2px 4px 10px 0 rgba(0, 0, 0, 0.28)" />
-							<Box
-								width="100%"
-								margin="0 auto"
-								background="url(https://uploads.quarkly.io/5fae1bc508b41a001fec14bc/images/29-01-02.jpg?v=2020-11-14T07:28:13.307Z) 50% 0/cover no-repeat"
-								border-radius={0}
-								height="120px"
-							/>
-							<Link href="#" font="normal 500 18px/1.2 --fontFamily-sans" margin="20px 0px 10px 0px">
-								<Link href="https://quarkly.io/preview#/https://quarkly.io/https://quarkly.io/index111">
-									IED РЗА{" "}
-								</Link>
-								{"\n\n"}
-							</Link>
-						</StackItem>
-						<StackItem width="50%" sm-width="100%" height="200px">
-							<Override slot="StackItemContent" flex-direction="column" background="--color-lightD1" box-shadow="2px 4px 10px 0 rgba(0, 0, 0, 0.28)" />
-							<Box
-								width="100%"
-								margin="0 auto"
-								background="url(https://uploads.quarkly.io/5fae1bc508b41a001fec14bc/images/photo_2020-11-14_00-17-22.jpg?v=2020-11-14T05:14:12.201Z) 50% 0/cover no-repeat"
-								border-radius={0}
-								height="120px"
-							/>
-							<Link href="#" font="normal 500 18px/1.2 --fontFamily-sans" margin="20px 0px 10px 0px">
-								РЗА
-							</Link>
-						</StackItem>
-					</Stack>
-				</StackItem>
 				<StackItem width="70%" lg-width="100%">
 					<Override slot="StackItemContent" lg-margin-bottom="24px" flex-direction="column" />
-					<Text color="--grey" letter-spacing="1px" margin="0 0 10px 0" font="--lead">
-						Выберите необходимые устройства и перетащите на поле{"\n\n"}
+					<Text color="--grey" letter-spacing="1px" margin="0 0 10px 0" font="normal 500 20px/1.5 --fontFamily-sans">
+						Посмотрите видео с теорией{" "}
 					</Text>
 					<Box
-						height="540px"
+						height="500px"
 						width="100%"
-						border-style="dashed"
+						border-style="none"
 						border-width="1px"
 						border-color="--color-primary"
 						background="#ffffff"
 					>
-						<Stack width="80%">
+						<Stack margin="0 -16px -16px -16px">
 							{"    "}{"    "}
 						</Stack>
-						<StackItem width="20%" sm-width="100%" height="200px" margin="10px 0px 0px 400px">
+						<Components.Video>
 							<Override
-								slot="StackItemContent"
-								flex-direction="column"
-								background="--color-lightD1"
-								box-shadow="4px 6px 20px 0 rgba(0, 0, 0, 0.57)"
-								opacity="0.3"
-								height="140px"
+								slot="SectionContent"
+								align-self="center"
+								width="740.109px"
+								min-width="346px"
+								flex-direction="row-reverse"
+								align-items="center"
+								justify-content="center"
+								max-width="1285px"
 							/>
-							<Box
-								width="100%"
-								margin="0 auto"
-								background="url(https://uploads.quarkly.io/5fae1bc508b41a001fec14bc/images/29-01-02.jpg?v=2020-11-14T07:28:13.307Z) 50% 0/cover no-repeat"
-								border-radius={0}
-								height="120px"
-							/>
-							<Link href="#" font="normal 500 18px/1.2 --fontFamily-sans" margin="10px 0px 10px 0px" text-align="center">
-								<Link href="https://quarkly.io/preview#/index111">
-									IED РЗА 1{" "}
-								</Link>
-								{"\n\n"}
-							</Link>
-						</StackItem>
-						<StackItem width="20%" sm-width="100%" height="200px" margin="10px 0px 0px 620px">
-							<Override slot="StackItemContent" flex-direction="column" box-shadow="2px 4px 10px 0 rgba(0, 0, 0, 0.28)" />
-							<Box
-								width="100%"
-								margin="0 auto"
-								background="url(https://uploads.quarkly.io/5fae1bc508b41a001fec14bc/images/29-01-02.jpg?v=2020-11-14T07:28:13.307Z) 50% 0/cover no-repeat"
-								border-radius={0}
-								height="150px"
-							/>
-							<Link href="#" font="normal 500 18px/1.2 --fontFamily-sans" margin="10px 0px 10px 0px" text-align="center">
-								<Link href="https://quarkly.io/preview#/index111">
-									IED РЗА 2{" "}
-								</Link>
-								{"\n\n"}
-							</Link>
-							<Components.BlueButton width="80%" margin="0px 10px 10px 16px">
-								Настроить
-							</Components.BlueButton>
-						</StackItem>
+						</Components.Video>
 					</Box>
+					<StackItem width="100%" display="flex">
+						<Override slot="StackItemContent" width="100%" margin="0px 0px 0px 380px" />
+						{"        "}
+						<Icon category="ai" icon={AiOutlineDislike} size="50px" color="#d83d3d" />
+						<Icon
+							category="ai"
+							icon={AiOutlineLike}
+							size="50px"
+							color="#189c18"
+							margin="0px 0px 0px 20px"
+						/>
+						{"    "}
+					</StackItem>
 				</StackItem>
+				<Section width="30%">
+					<Text font="normal 500 20px/1.5 --fontFamily-sans" color="--grey" margin="0 0px 16px 0px">
+						Оставьте ваш комментарий или вопрос
+					</Text>
+					<Box
+						width="100%"
+						height="200px"
+						background="#ffffff"
+						border-radius="5px"
+						border-width="1px"
+						border-style="solid"
+						border-color="--color-primary"
+					/>
+					<Section height="230px" />
+					<Components.BlueButton width="100%">
+						Перейти к заданию
+					</Components.BlueButton>
+				</Section>
 			</Stack>
 		</Section>
 		<Section height="40px" quarkly-title="Footer">
@@ -208,6 +132,9 @@ export default (() => {
 				<SocialMedia facebook="https://www.facebook.com/official.rosseti/" vkontakte="https://vk.com/rosseti" instagram="https://www.instagram.com/rosseti_official/?hl=ru" />
 			</Box>
 		</Section>
+		<Link href="#">
+			Some text
+		</Link>
 		<Link
 			font={"--capture"}
 			font-size={"10px"}
