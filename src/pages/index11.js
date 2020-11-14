@@ -166,7 +166,7 @@ RS485
 							<Components.CompStandart margin="0px 0px 0px 220px" height="200px" width="460px">
 								<Override
 									slot="box"
-									background="url(https://uploads.quarkly.io/5fae1bc508b41a001fec14bc/images/29-01.jpg?v=2020-11-14T09:06:41.165Z) 50% 0/cover no-repeat"
+									background="url(https://uploads.quarkly.io/5fae1bc508b41a001fec14bc/images/30-01-01.jpg?v=2020-11-14T10:38:26.003Z) 50% 0/cover no-repeat"
 									height="150px"
 									width="300px"
 									padding="0 0px 0px 0px"
