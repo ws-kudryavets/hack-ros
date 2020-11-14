@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Strong, Span, Text, Image, Box, Input } from "@quarkly/widgets";
+import { Theme, Link, Strong, Span, Text, Image, Box } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { Override, Section, Stack, StackItem, SocialMedia } from "@quarkly/components";
 import * as Components from "components";
@@ -71,13 +71,17 @@ export default (() => {
 					<Stack margin="0 -16px -16px -16px" width="100%">
 						<Components.Input1 width="100%">
 							<Override slot="StackItemContent" width="100%" />
-							<Override slot="text1" />
+							<Override slot="text1" font="normal 500 24px/1.2 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif" />
+							<Override slot="text2" font="normal 500 24px/1.2 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif" />
+							<Override slot="text" color="--primary" />
 						</Components.Input1>
 						<Components.Input1 width="100%">
 							<Override slot="StackItemContent" width="100%" />
-							<Override slot="text">
+							<Override slot="text" color="--primary">
 								LED 2
 							</Override>
+							<Override slot="text1" font="normal 500 24px/1.2 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif" />
+							<Override slot="text2" font="normal 500 24px/1.2 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif" />
 						</Components.Input1>
 					</Stack>
 				</StackItem>
@@ -101,7 +105,9 @@ export default (() => {
 					</Section>
 					<StackItem>
 						<Override slot="StackItemContent" margin="40px 0px 0px 0px" />
-						<Components.BlueButton width="60%" />
+						<Components.BlueButton width="60%" disabled>
+							Сохранить
+						</Components.BlueButton>
 					</StackItem>
 				</StackItem>
 			</Stack>
@@ -119,12 +125,6 @@ export default (() => {
 				<SocialMedia facebook="https://www.facebook.com/official.rosseti/" vkontakte="https://vk.com/rosseti" instagram="https://www.instagram.com/rosseti_official/?hl=ru" />
 			</Box>
 		</Section>
-		<Box />
-		<Box />
-		<Text>
-			Some text
-		</Text>
-		<Input />
 		<Link
 			font={"--capture"}
 			font-size={"10px"}
