@@ -1,8 +1,8 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Image, Button, Span, Text, Box, Input } from "@quarkly/widgets";
+import { Theme, Link, Span, Text, Box, Input, Image } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
-import { Override, StackItem, Stack, Section, Formspree, SocialMedia } from "@quarkly/components";
+import { Override, StackItem, Stack, Formspree, Section, SocialMedia } from "@quarkly/components";
 import * as Components from "components";
 export default (() => {
 	return <Theme theme={theme}>
@@ -16,56 +16,14 @@ export default (() => {
 			<meta property={"og:image"} content={"https://uploads.quarkly.io/5f44d0da669357001e60ed14/images/website-example-quarkly.png?v=2020-11-05T19:48:01.806Z"} />
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/readme/cra/favicon-32x32.ico"} type={"image/x-icon"} />
 		</Helmet>
-		<Section
-			margin="0 0 0 0"
-			padding="16px 0 16px 0"
-			box-sizing="border-box"
-			quarkly-title="Header"
-			justify-content="center"
-		>
-			<Override
-				slot="SectionContent"
-				width="100%"
-				margin="0px 32px 0px 32px"
-				md-margin="0px 16px 0px 16px"
-				min-width="auto"
-			/>
-			<Stack>
-				{"    "}
-				<StackItem display="flex" quarkly-title="Logo" md-width="75%" width="25%">
-					<Override slot="StackItemContent" align-items="center" />
-					{"        "}
-					<Link href="/" position="relative" transition="opacity 200ms ease" quarkly-title="Link">
-						<Image src="https://uploads.quarkly.io/5f44d0da669357001e60ed14/images/default-website-logo.svg?v=2020-11-06T17:26:21.226Z" width="120px" z-index="3" />
-					</Link>
-				</StackItem>
-				<StackItem display="flex" quarkly-title="Side" width="75%" md-display="none">
-					<Override slot="StackItemContent" align-items="center" justify-content="flex-end" />
-					<Button
-						padding="8px 18px 8px 18px"
-						font="--base"
-						letter-spacing="0.5px"
-						z-index="5"
-						background="--color-primary"
-						md-display="none"
-						white-space="nowrap"
-						border-radius="0px"
-						hover-transform="translateY(-4px)"
-						transition="transform --transitionDuration-fast --transitionTimingFunction-easeInOut 0s"
-					>
-						Личный кабинет{"\n\n"}
-					</Button>
-					{"   "}
-				</StackItem>
-				{"    "}
-			</Stack>
-		</Section>
+		<Components.MenuTech />
 		<Section
 			color="--light"
 			padding="100px 0"
 			sm-padding="40px 0"
 			position="relative"
 			background="linear-gradient(0deg,rgba(25, 30, 34, 0.8) 0%,rgba(25, 30, 34, 0.8) 100%),--color-darkL2 url(https://images.unsplash.com/photo-1547619292-240402b5ae5d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80)"
+			height="600px"
 		>
 			<Stack>
 				<StackItem width="50%" md-width="100%">
@@ -135,7 +93,7 @@ export default (() => {
 									<Override slot="StackItemContent" flex-direction="column" />
 								</StackItem>
 								<StackItem width="100%">
-									<Components.BlackButton focus-background="#FFA750" />
+									<Components.BlackButton focus-background="#FFA750" disabled={false} type="submit" />
 								</StackItem>
 							</Stack>
 						</Formspree>
@@ -152,7 +110,9 @@ export default (() => {
 				flex-direction="row"
 				md-flex-direction="column"
 			>
-				<Image width="120px" height="64px" src="https://uploads.quarkly.io/5fae1bc508b41a001fec14bc/images/logo2.png?v=2020-11-13T21:02:57.282Z" />
+				<StackItem>
+					<Image width="120px" height="64px" src="https://uploads.quarkly.io/5fae1bc508b41a001fec14bc/images/logo2.png?v=2020-11-13T21:02:57.282Z" />
+				</StackItem>
 				<SocialMedia facebook="https://www.facebook.com/official.rosseti/" vkontakte="https://vk.com/rosseti" instagram="https://www.instagram.com/rosseti_official/?hl=ru" />
 			</Box>
 		</Section>

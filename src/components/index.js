@@ -1,4 +1,6 @@
-export { default as BlackButton } from "./BlackButton"
-export { default as BorderButton } from "./BorderButton"
 export { default as BurgerMenu } from "./BurgerMenu"
+export { default as MenuTech } from "./MenuTech"
 export { default as BlueButton } from "./BlueButton"
+export { default as BlackButton } from "./BlackButton"
+export { default as CompStandart } from "./CompStandart"
+export { default as BorderButton } from "./BorderButton"
