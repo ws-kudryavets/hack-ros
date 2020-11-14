@@ -62,7 +62,10 @@ const Dustbin = ({
 			opacity: 0.2
 		} : {})
 	}}>
-		{!lastDroppedItem ? <CompStandart /> : <Comp2 />}
+		{!lastDroppedItem ? <CompStandart /> : <Comp2 style={{
+			margin: 0,
+			width: 'inherit'
+		}} />}
 	</div>;
 };
 
