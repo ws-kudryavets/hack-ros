@@ -80,120 +80,346 @@ export default (() => {
 			height="700px"
 		>
 			<Text font="normal 500 20px/1.5 --fontFamily-sans" color="#6F839F">
-				Укажите входы устройств
+				Задача подписать два устройства на
+				<br />
+				GOOSE-сообщения друг друга. Кликайте на поля{"  "}
+				<br />
+				{"\n\n\n"}
 			</Text>
-			<Stack margin="0 -16px 0 -16px">
-				<StackItem
-					width="60%"
-					lg-width="100%"
-					lg-order="2"
-					margin="0 0px 0px 0px"
-					background="--color-light"
-				>
-					<Override slot="StackItemContent" text-align="center" background="--color-light" height="500px" />
-					<Stack margin="0 -16px -16px -16px" width="100%">
-						<StackItem width="100%" sm-width="100%" height="280px">
-							<Override
-								slot="StackItemContent"
-								flex-direction="column"
-								box-shadow="2px 4px 10px 0 rgba(0, 0, 0, 0.28)"
-								background="#ffffff"
-								height="200px"
-							/>
-							<Text
-								font="normal 900 36px/1.2 --fontFamily-sans"
-								text-align="left"
-								margin="16px 0px 16px 20px"
-								color="--primary"
-								width="40%"
-							>
-								IED 1
-							</Text>
-							<Stack>
-								{"    "}{"    "}
-								<StackItem width="20%" display="flex" margin="0px 0px 0px 0px">
-									<Override slot="StackItemContent" width="40%" margin="0px 0px 0px 100px" />
-									{"        "}
-									<Text font="--lead" margin="0px 0px 0px 0px" display="inline-block" width="100%">
-										<Strong margin="0px 0px 0px 0" width="100%">
-											Вход 1
-										</Strong>
-									</Text>
-									{"    "}
-								</StackItem>
-								<StackItem width="20%" display="flex" margin="0px 0px 0px 150px">
-									<Override slot="StackItemContent" width="40%" />
-									{"        "}
-									<Text font="--lead" margin="0px 0px 0px 0px" display="inline-block">
-										<Strong>
-											Вход 1
-										</Strong>
-									</Text>
-									{"    "}
-								</StackItem>
-								<StackItem width="20%" display="flex" margin="0px 0px 0px 100px">
-									<Override slot="StackItemContent" width="40%" />
-									{"        "}
-									<Text font="--lead" margin="0px 0px 0px 0px" display="inline-block">
-										<Strong>
-											Вход 1
-										</Strong>
-									</Text>
-									{"    "}
-								</StackItem>
-							</Stack>
-							<Stack height="36px" margin="0 -16px -31px -16px">
-								{"    "}
-								<Text font="normal 500 24px/1.2 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif" margin="0px 0px 0px 10px" display="inline-block" width="50%">
-									Выход 1{" "}
-									<br />
-									{"\n\n\n"}
+			<StackItem
+				width="60%"
+				lg-width="100%"
+				lg-order="2"
+				margin="0 0px 0px 0px"
+				background="--color-light"
+			>
+				<Override slot="StackItemContent" text-align="center" background="--color-light" height="320px" />
+				<Stack margin="0 -16px -16px -16px" width="100%">
+					<StackItem width="100%" sm-width="100%" height="320px">
+						<Override
+							slot="StackItemContent"
+							flex-direction="column"
+							box-shadow="2px 4px 10px 0 rgba(0, 0, 0, 0.28)"
+							background="#ffffff"
+							height="300px"
+						/>
+						<Text
+							font="normal 900 28px/1.2 --fontFamily-sans"
+							text-align="left"
+							margin="16px 0px 16px 370px"
+							color="--primary"
+							width="40%"
+						>
+							IED 1
+						</Text>
+						<Stack margin="-20px -16px -16px -16px">
+							{"    "}{"    "}
+							<StackItem width="95px" display="flex" margin="0px 0px 0px 370px">
+								<Override slot="StackItemContent" width="40%" margin="0px 0px 0px 100" />
+								{"        "}
+								<Text font="--lead" margin="0px 0px 0px 0px" display="inline-block">
+									<Strong font="700 18px/30px -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif" margin="0px 0px 0px 0">
+										Вход 1
+									</Strong>
 								</Text>
 								{"    "}
-								<Input width="5%" border-color="--color-primary" height="36px" border-width="1px" />
-								<Input
-									width="5%"
-									border-color="--color-primary"
-									height="36px"
-									border-width="1px"
-									margin="0px 0px 0px 40px"
-								/>
-								<Input
-									width="5%"
-									border-color="--color-primary"
-									height="36px"
-									border-width="1px"
-									margin="0px 0px 0px 40px"
-								/>
-							</Stack>
-						</StackItem>
-					</Stack>
-				</StackItem>
-				<StackItem width="40%" lg-width="100%">
-					<Override slot="StackItemContent" lg-margin-bottom="24px" flex-direction="column" height="500px" />
-					<Section height="500px">
-						<Override slot="SectionContent" height="300px" />
-					</Section>
-					<StackItem>
-						<Override slot="StackItemContent" margin="40px 0px 0px 0px" />
-						<Components.BlueButton width="60%" disabled={false} type="button">
-							<Link
-								href="goose-final"
-								overflow-wrap="normal"
-								word-break="normal"
-								white-space="normal"
-								text-indent="0"
-								text-overflow="clip"
-								hyphens="manual"
-								color="#fff"
-								text-decoration-line="initial"
-							>
-								Сохранить
-							</Link>
-						</Components.BlueButton>
+							</StackItem>
+							<StackItem width="95px" display="flex" margin="0px 0px 0px 0px">
+								<Override slot="StackItemContent" width="60px" />
+								{"        "}
+								<Text font="--lead" margin="0px 0px 0px 0px" display="inline-block">
+									<Strong
+										font="700 18px/30px -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif"
+										overflow-wrap="normal"
+										word-break="normal"
+										white-space="normal"
+										text-indent="0"
+										text-overflow="clip"
+										hyphens="manual"
+									>
+										Вход 2
+									</Strong>
+								</Text>
+								{"    "}
+							</StackItem>
+							<StackItem width="95px" display="flex" margin="0px 0px 0px 0px">
+								<Override slot="StackItemContent" width="100px" />
+								{"        "}
+								<Text font="--lead" margin="0px 0px 0px 0px" display="inline-block">
+									<Strong
+										font="700 18px/30px -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif"
+										overflow-wrap="normal"
+										word-break="normal"
+										white-space="normal"
+										text-indent="0"
+										text-overflow="clip"
+										hyphens="manual"
+									>
+										Вход 3
+									</Strong>
+								</Text>
+								{"    "}
+							</StackItem>
+						</Stack>
+						<Stack height="36px" margin="20px -16px -31px -16px">
+							{"    "}
+							<Text font="normal 500 24px/1.2 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif" margin="0px 0px 0px 10px" display="inline-block" width="50%">
+								IED 2 Выход 1{" "}
+								<br />
+								{"\n\n\n"}
+							</Text>
+							{"    "}
+							<Input
+								width="5%"
+								border-color="--color-primary"
+								height="36px"
+								border-width="1px"
+								margin="0px 0px 0px 20px"
+							/>
+							<Input
+								width="5%"
+								border-color="--color-primary"
+								height="36px"
+								border-width="1px"
+								margin="0px 0px 0px 40px"
+							/>
+							<Input
+								width="5%"
+								border-color="--color-primary"
+								height="36px"
+								border-width="1px"
+								margin="0px 0px 0px 40px"
+							/>
+						</Stack>
+						<Stack height="36px" margin="50px -16px -31px -16px">
+							{"    "}
+							<Text font="normal 500 24px/1.2 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif" margin="0px 0px 0px 10px" display="inline-block" width="50%">
+								IED 2 Выход 2{" "}
+								<br />
+								{"\n\n\n"}
+							</Text>
+							{"    "}
+							<Input
+								width="5%"
+								border-color="--color-primary"
+								height="36px"
+								border-width="1px"
+								margin="0px 0px 0px 20px"
+							/>
+							<Input
+								width="5%"
+								border-color="--color-primary"
+								height="36px"
+								border-width="1px"
+								margin="0px 0px 0px 40px"
+							/>
+							<Input
+								width="5%"
+								border-color="--color-primary"
+								height="36px"
+								border-width="1px"
+								margin="0px 0px 0px 40px"
+							/>
+						</Stack>
+						<Stack height="36px" margin="50px -16px -31px -16px">
+							{"    "}
+							<Text font="normal 500 24px/1.2 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif" margin="0px 0px 0px 10px" display="inline-block" width="50%">
+								IED 2 Выход 2{" "}
+								<br />
+								{"\n\n\n"}
+							</Text>
+							{"    "}
+							<Input
+								width="5%"
+								border-color="--color-primary"
+								height="36px"
+								border-width="1px"
+								margin="0px 0px 0px 20px"
+							/>
+							<Input
+								width="5%"
+								border-color="--color-primary"
+								height="36px"
+								border-width="1px"
+								margin="0px 0px 0px 40px"
+							/>
+							<Input
+								width="5%"
+								border-color="--color-primary"
+								height="36px"
+								border-width="1px"
+								margin="0px 0px 0px 40px"
+							/>
+						</Stack>
 					</StackItem>
-				</StackItem>
-			</Stack>
+					<StackItem width="100%" sm-width="100%" height="320px">
+						<Override
+							slot="StackItemContent"
+							flex-direction="column"
+							box-shadow="2px 4px 10px 0 rgba(0, 0, 0, 0.28)"
+							background="#ffffff"
+							height="300px"
+						/>
+						<Text
+							font="normal 900 28px/1.2 --fontFamily-sans"
+							text-align="left"
+							margin="16px 0px 16px 370px"
+							color="--primary"
+							width="40%"
+						>
+							IED 2
+						</Text>
+						<Stack margin="-20px -16px -16px -16px">
+							{"    "}{"    "}
+							<StackItem width="95px" display="flex" margin="0px 0px 0px 370px">
+								<Override slot="StackItemContent" width="40%" margin="0px 0px 0px 100" />
+								{"        "}
+								<Text font="--lead" margin="0px 0px 0px 0px" display="inline-block">
+									<Strong
+										font="700 18px/30px -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif"
+										margin="0px 0px 0px 0"
+										overflow-wrap="normal"
+										word-break="normal"
+										white-space="normal"
+										text-indent="0"
+										text-overflow="clip"
+										hyphens="manual"
+									>
+										Вход 1
+									</Strong>
+								</Text>
+								{"    "}
+							</StackItem>
+							<StackItem width="95px" display="flex" margin="0px 0px 0px 0px">
+								<Override slot="StackItemContent" width="60px" />
+								{"        "}
+								<Text font="--lead" margin="0px 0px 0px 0px" display="inline-block">
+									<Strong
+										font="700 18px/30px -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif"
+										overflow-wrap="normal"
+										word-break="normal"
+										white-space="normal"
+										text-indent="0"
+										text-overflow="clip"
+										hyphens="manual"
+									>
+										Вход 2
+									</Strong>
+								</Text>
+								{"    "}
+							</StackItem>
+							<StackItem width="95px" display="flex" margin="0px 0px 0px 0px">
+								<Override slot="StackItemContent" width="100px" />
+								{"        "}
+								<Text font="--lead" margin="0px 0px 0px 0px" display="inline-block">
+									<Strong
+										font="700 18px/30px -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif"
+										overflow-wrap="normal"
+										word-break="normal"
+										white-space="normal"
+										text-indent="0"
+										text-overflow="clip"
+										hyphens="manual"
+									>
+										Вход 3
+									</Strong>
+								</Text>
+								{"    "}
+							</StackItem>
+						</Stack>
+						<Stack height="36px" margin="20px -16px -31px -16px">
+							{"    "}
+							<Text font="normal 500 24px/1.2 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif" margin="0px 0px 0px 10px" display="inline-block" width="50%">
+								IED 1 Выход 1{" "}
+								<br />
+								{"\n\n\n"}
+							</Text>
+							{"    "}
+							<Input
+								width="5%"
+								border-color="--color-primary"
+								height="36px"
+								border-width="1px"
+								margin="0px 0px 0px 20px"
+							/>
+							<Input
+								width="5%"
+								border-color="--color-primary"
+								height="36px"
+								border-width="1px"
+								margin="0px 0px 0px 40px"
+							/>
+							<Input
+								width="5%"
+								border-color="--color-primary"
+								height="36px"
+								border-width="1px"
+								margin="0px 0px 0px 40px"
+							/>
+						</Stack>
+						<Stack height="36px" margin="50px -16px -31px -16px">
+							{"    "}
+							<Text font="normal 500 24px/1.2 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif" margin="0px 0px 0px 10px" display="inline-block" width="50%">
+								IED 1 Выход 2{" "}
+								<br />
+								{"\n\n\n"}
+							</Text>
+							{"    "}
+							<Input
+								width="5%"
+								border-color="--color-primary"
+								height="36px"
+								border-width="1px"
+								margin="0px 0px 0px 20px"
+							/>
+							<Input
+								width="5%"
+								border-color="--color-primary"
+								height="36px"
+								border-width="1px"
+								margin="0px 0px 0px 40px"
+							/>
+							<Input
+								width="5%"
+								border-color="--color-primary"
+								height="36px"
+								border-width="1px"
+								margin="0px 0px 0px 40px"
+							/>
+						</Stack>
+						<Stack height="36px" margin="50px -16px -31px -16px">
+							{"    "}
+							<Text font="normal 500 24px/1.2 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif" margin="0px 0px 0px 10px" display="inline-block" width="50%">
+								IED 1 Выход 2{" "}
+								<br />
+								{"\n\n\n"}
+							</Text>
+							{"    "}
+							<Input
+								width="5%"
+								border-color="--color-primary"
+								height="36px"
+								border-width="1px"
+								margin="0px 0px 0px 20px"
+							/>
+							<Input
+								width="5%"
+								border-color="--color-primary"
+								height="36px"
+								border-width="1px"
+								margin="0px 0px 0px 40px"
+							/>
+							<Input
+								width="5%"
+								border-color="--color-primary"
+								height="36px"
+								border-width="1px"
+								margin="0px 0px 0px 40px"
+							/>
+						</Stack>
+					</StackItem>
+				</Stack>
+			</StackItem>
 		</Section>
 		<Section height="40px" quarkly-title="Footer">
 			<Box
