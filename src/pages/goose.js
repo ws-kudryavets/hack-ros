@@ -1,8 +1,8 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Strong, Span, Text, Box, Image } from "@quarkly/widgets";
+import { Theme, Link, Strong, Span, Box, Text, Image } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
-import { Override, Section, StackItem, Stack, SocialMedia } from "@quarkly/components";
+import { Override, StackItem, Stack, Section, SocialMedia } from "@quarkly/components";
 import * as Components from "components";
 export default (() => {
 	return <Theme theme={theme}>
@@ -14,15 +14,8 @@ export default (() => {
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/readme/cra/favicon-32x32.ico"} type={"image/x-icon"} />
 		</Helmet>
 		<Components.MenuTech />
-		<Section color="--light" padding="50px 0 50px 0" sm-padding="40px 0" position="relative">
-			<Override slot="SectionContent" />
-			<Text
-				as="p"
-				margin="6px 0"
-				font="--headline3"
-				color="#5f5f5f"
-				width="100%"
-			>
+		<Components.Title>
+			<Override slot="text">
 				<Strong
 					overflow-wrap="normal"
 					word-break="normal"
@@ -31,7 +24,7 @@ export default (() => {
 					text-overflow="clip"
 					hyphens="manual"
 				>
-					Задание 1.{" \n\n"}
+					Задание 3.{"  "}
 				</Strong>
 				<Span
 					overflow-wrap="normal"
@@ -41,12 +34,35 @@ export default (() => {
 					text-overflow="clip"
 					hyphens="manual"
 				>
-					Настройка IED на прием-передачу GOOSE-сообщений{" \n"}
+					Тренажёр
+				</Span>
+				<Strong
+					overflow-wrap="normal"
+					word-break="normal"
+					white-space="normal"
+					text-indent="0"
+					text-overflow="clip"
+					hyphens="manual"
+				>
+					{" "}«
+				</Strong>
+				<Span
+					overflow-wrap="normal"
+					word-break="normal"
+					white-space="normal"
+					text-indent="0"
+					text-overflow="clip"
+					hyphens="manual"
+				>
+					Настройка IED на прием-передачу GOOSE-сообщений»{"  "}
 					<br />
 					{"\n\n\n"}
 				</Span>
-			</Text>
-		</Section>
+			</Override>
+		</Components.Title>
+		<Components.Track>
+			<Override slot="image" src="https://uploads.quarkly.io/5fae1bc508b41a001fec14bc/images/3.svg?v=2020-11-14T18:26:05.628Z" />
+		</Components.Track>
 		<Section
 			padding="64px 0"
 			sm-padding="40px 0"
@@ -216,8 +232,6 @@ export default (() => {
 				<SocialMedia facebook="https://www.facebook.com/official.rosseti/" vkontakte="https://vk.com/rosseti" instagram="https://www.instagram.com/rosseti_official/?hl=ru" />
 			</Box>
 		</Section>
-		<Box />
-		<Box />
 		<Link
 			font={"--capture"}
 			font-size={"10px"}

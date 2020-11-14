@@ -33,7 +33,7 @@ export default (() => {
 					text-overflow="clip"
 					hyphens="manual"
 				>
-					Задание 3.{"  "}
+					Задание 4.{"  "}
 				</Strong>
 				<Span
 					overflow-wrap="normal"
@@ -43,7 +43,7 @@ export default (() => {
 					text-overflow="clip"
 					hyphens="manual"
 				>
-					Тренажёр{" "}
+					Тренажёр
 				</Span>
 				<Strong
 					overflow-wrap="normal"
@@ -53,7 +53,7 @@ export default (() => {
 					text-overflow="clip"
 					hyphens="manual"
 				>
-					«
+					{" "}«
 				</Strong>
 				<Span
 					overflow-wrap="normal"
@@ -76,8 +76,9 @@ export default (() => {
 			color="--dark"
 			background="--color-light"
 			margin="-10px 0 0 0"
-			height="800px"
+			height="550px"
 		>
+			<Override slot="SectionContent" height="500px" />
 			<Text font="normal 500 20px/1.5 --fontFamily-sans" color="#6F839F">
 				Заполните блоки
 			</Text>
@@ -89,17 +90,17 @@ export default (() => {
 					margin="20px 0px 0px 0px"
 					background="--color-light"
 				>
-					<Override slot="StackItemContent" text-align="center" background="--color-light" height="500px" />
+					<Override slot="StackItemContent" text-align="center" background="--color-light" height="400px" />
 					<StackItem width="100%" sm-width="100%" height="280px">
 						<Override
 							slot="StackItemContent"
 							flex-direction="column"
 							box-shadow="2px 4px 10px 0 rgba(0, 0, 0, 0.28)"
 							background="#ffffff"
-							height="700px"
+							height="370px"
 						/>
 						<Text font="normal 900 36px/1.2 --fontFamily-sans" text-align="left" margin="16px 0px 16px 20px" color="--primary">
-							IED 1
+							PC 1
 						</Text>
 						<Stack height="50px" margin="0 -16px -16px -16px">
 							{"    "}
@@ -107,7 +108,7 @@ export default (() => {
 								<Override slot="StackItemContent" margin="0px 0px 0px 10px" width="50%" />
 								{"        "}
 								<Text font="normal 500 24px/1.2 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif" margin="0px 0px 0px 10px" display="inline-block">
-									Имя GCB{" \n"}
+									Имя PC{"  "}
 									<br />
 									{"\n\n\n"}
 								</Text>
@@ -122,7 +123,7 @@ export default (() => {
 								<Override slot="StackItemContent" margin="0px 0px 0px 10px" width="50%" />
 								{"        "}
 								<Text font="normal 500 24px/1.2 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif" margin="0px 0px 0px 10px" display="inline-block">
-									GOOSE ID
+									IP-адрес
 									<br />
 									{"\n\n\n"}
 								</Text>
@@ -137,69 +138,7 @@ export default (() => {
 								<Override slot="StackItemContent" margin="0px 0px 0px 10px" width="50%" />
 								{"        "}
 								<Text font="normal 500 24px/1.2 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif" margin="0px 0px 0px 10px" display="inline-block">
-									MAC адрес{" \n"}
-									<br />
-									{"\n\n\n"}
-								</Text>
-								{"    "}
-							</StackItem>
-							{"    "}
-							<Input width="45%" border-color="--color-primary" height="50px" border-width="1px" />
-						</Stack>
-						<Stack margin="40px -16px -16px -16px">
-							{"    "}
-							<StackItem width="40%" display="flex">
-								<Override slot="StackItemContent" margin="0px 0px 0px 10px" width="50%" />
-								{"        "}
-								<Text font="normal 500 24px/1.2 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif" margin="0px 0px 0px 10px" display="inline-block">
-									APP ID{" \n"}
-									<br />
-									{"\n\n\n"}
-								</Text>
-								{"    "}
-							</StackItem>
-							{"    "}
-							<Input width="45%" border-color="--color-primary" height="50px" border-width="1px" />
-						</Stack>
-						<Stack margin="40px -16px -16px -16px">
-							{"    "}
-							<StackItem width="40%" display="flex">
-								<Override slot="StackItemContent" margin="0px 0px 0px 10px" width="50%" />
-								{"        "}
-								<Text font="normal 500 24px/1.2 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif" margin="0px 0px 0px 10px" display="inline-block">
-									VLAN ID{" \n"}
-									<br />
-									{"\n\n\n"}
-								</Text>
-								{"    "}
-							</StackItem>
-							{"    "}
-							<Input width="45%" border-color="--color-primary" height="50px" border-width="1px" />
-						</Stack>
-						<Stack margin="40px -16px -16px -16px">
-							{"    "}
-							<StackItem width="40%" display="flex">
-								<Override slot="StackItemContent" margin="0px 0px 0px 10px" width="50%" />
-								{"        "}
-								<Text font="normal 500 24px/1.2 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif" margin="0px 0px 0px 10px" display="inline-block">
-									Min Time{" \n"}
-									<br />
-									{"\n\n\n"}
-								</Text>
-								{"    "}
-							</StackItem>
-							{"    "}
-							<Input width="45%" border-color="--color-primary" height="50px" border-width="1px" />
-						</Stack>
-						<Stack margin="40px -16px -16px -16px">
-							{"    "}
-							<StackItem width="40%" display="flex">
-								<Override slot="StackItemContent" margin="0px 0px 0px 10px" width="50%" />
-								{"        "}
-								<Text font="normal 500 24px/1.2 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif" margin="0px 0px 0px 10px" display="inline-block">
-									Max Time
-									<br />
-									{"\n\n\n"}
+									Маска подсети
 								</Text>
 								{"    "}
 							</StackItem>
@@ -219,19 +158,6 @@ export default (() => {
 					>
 						В полях ввода справа нужно задать соответствующие настройки:
 						<br />
-						<Strong
-							overflow-wrap="normal"
-							word-break="normal"
-							white-space="normal"
-							text-indent="0"
-							text-overflow="clip"
-							hyphens="manual"
-						>
-							1) Имя GCB{" "}
-						</Strong>
-						(GOOSE CONTROL BLOCK). Пример: GOOSE1 — важно, чтобы имя не начиналось с цифры.
-						<br />
-						{"\n"}
 						<br />
 						<Strong
 							overflow-wrap="normal"
@@ -240,70 +166,27 @@ export default (() => {
 							text-indent="0"
 							text-overflow="clip"
 							hyphens="manual"
-						>
-							2) GOOSE ID{" "}
+						/>
+						<Strong>
+							1) Имя PC
 						</Strong>
-						(идентификатор GOOSE). Пример: GS1.
-						<br />
-						<br />
-						<Strong
-							overflow-wrap="normal"
-							word-break="normal"
-							white-space="normal"
-							text-indent="0"
-							text-overflow="clip"
-							hyphens="manual"
-						>
-							3) MAC адрес
-						</Strong>
-						{" "}для мультикаст-рассылки. Пример: 01:0С:СD:01:00:01
-						<br />
-						При этом важно что первые четыре октета 01:0С:СD:01 должны быть указаны обязательно, т.к. закреплены стандартом. Последние два октета могут быть выбраны произвольно из диапазона 00:00–01:FF. Для двух устройств они обязательно должны быть разными.
-						<br />
-						<br />
-						<Strong
-							overflow-wrap="normal"
-							word-break="normal"
-							white-space="normal"
-							text-indent="0"
-							text-overflow="clip"
-							hyphens="manual"
-						>
-							4){" "}
-						</Strong>
-						<Strong
-							overflow-wrap="normal"
-							word-break="normal"
-							white-space="normal"
-							text-indent="0"
-							text-overflow="clip"
-							hyphens="manual"
-						>
-							AppID
-						</Strong>
-						{" "}— может быть задан произвольно в диапазоне 8000–BFFF, для GOOSE-сообщений действующих на отключение коммутационных аппаратов (согласно корпоративному профилю МЭК 61850 Приложение 3).
+						{" "}— имя персонального компьютера в сети.{"\n"}
 						<br />
 						<br />
 						<Strong>
-							5) Идентификатор виртуальной подсети VLAN ID
+							{"\n"}2) IP-адрес
 						</Strong>
-						. Может быть задан в диапазоне от 0 до 4095.
+						{" "}— уникальный сетевой адрес узла в компьютерной сети, построенной на основе стека протоколов TCP/IP.{"\n"}
 						<br />
 						<br />
 						<Strong>
-							6) Минимальное время между отправками дублирующих GOOSE
+							{"\n"}3) Маска подсети
 						</Strong>
-						{" "}— сообщений Min Time — должно быть 4 мс, для быстрых GOOSE-сообщений (согласно корпоративному профилю МЭК 61850 Приложение 3).
-						<br />
-						<br />
-						<Strong>
-							7) Временной интервал между отправкой штатных GOOSE-сообщений Max Time
-						</Strong>
-						. Должно быть 1000 мс (согласно корпоративному профилю МЭК 61850 Приложение 3).{" \n\n"}
+						{" "}— битовая маска для определения по IP-адресу адреса подсети и адреса узла (хоста, компьютера, устройства) этой подсети.{"\n"}
 						<br />
 						{"\n\n\n"}
 					</Text>
-					<Components.BlueButton width="60%" disabled={false} margin="26px 0px 0px 0px" type="button">
+					<Components.BlueButton width="60%" disabled={false} margin="100px 0px 0px 0px" type="button">
 						<Link
 							href="goose1"
 							overflow-wrap="normal"

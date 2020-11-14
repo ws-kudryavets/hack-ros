@@ -31,7 +31,7 @@ export default (() => {
 					text-overflow="clip"
 					hyphens="manual"
 				>
-					Задание 1.{" \n\n"}
+					Задание 3.{"  "}
 				</Strong>
 				<Span
 					overflow-wrap="normal"
@@ -41,7 +41,27 @@ export default (() => {
 					text-overflow="clip"
 					hyphens="manual"
 				>
-					Настройка IED на прием-передачу GOOSE-сообщений{" \n"}
+					Тренажёр{" "}
+				</Span>
+				<Strong
+					overflow-wrap="normal"
+					word-break="normal"
+					white-space="normal"
+					text-indent="0"
+					text-overflow="clip"
+					hyphens="manual"
+				>
+					«
+				</Strong>
+				<Span
+					overflow-wrap="normal"
+					word-break="normal"
+					white-space="normal"
+					text-indent="0"
+					text-overflow="clip"
+					hyphens="manual"
+				>
+					Настройка IED на прием-передачу GOOSE-сообщений»{"  "}
 					<br />
 					{"\n\n\n"}
 				</Span>

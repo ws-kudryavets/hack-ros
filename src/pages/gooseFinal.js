@@ -1,9 +1,10 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Strong, Span, Text, Box, Image } from "@quarkly/widgets";
+import { Theme, Link, Strong, Span, Text, Button, Icon, Image, Box } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { Override, Section, Stack, StackItem, SocialMedia } from "@quarkly/components";
 import * as Components from "components";
+import { MdArrowForward } from "react-icons/md";
 export default (() => {
 	return <Theme theme={theme}>
 		<Helmet>
@@ -76,7 +77,7 @@ export default (() => {
 			font="--base"
 			color="--dark"
 			background="--color-light"
-			margin="10px 0 0 0"
+			margin="-10px 0 0 0"
 		>
 			<Stack>
 				<StackItem width="30%" lg-width="100%" lg-order="2" margin="30px 0px 0px 0px">
@@ -107,7 +108,21 @@ export default (() => {
 						<Stack margin="0 -16px -16px -16px" height="217px">
 							{"    "}
 							<Components.Comp2 />
-							<Components.Comp2 margin="10px 0px 0px 280px" />
+							<StackItem margin="0px 0px 0px 37px">
+								<Override slot="StackItemContent" flex-direction="column" align-items="center" justify-content="flex-start" />
+								<Button height="36px">
+									Отправить
+								</Button>
+								<Icon
+									category="md"
+									icon={MdArrowForward}
+									size="43px"
+									padding="0px 0px 0px 0px"
+									margin="14px 0px 0px 0px"
+								/>
+								<Image width="64px" height="64px" src="https://uploads.quarkly.io/5fae1bc508b41a001fec14bc/images/Asset%201.png?v=2020-11-14T18:48:37.148Z" />
+							</StackItem>
+							<Components.Comp2 margin="10px 0px 0px 47px" />
 							{"    "}
 						</Stack>
 						<Stack width="400px">
@@ -153,18 +168,7 @@ export default (() => {
 						<Section padding="0 0 0 0" margin="36px 0 0 0">
 							<Override slot="SectionContent" margin="0px 44.3125px 10px 44.3125px" padding="0px 0px 0 0px" />
 							<Components.BorderButton width="60%" margin="0px 0px 10px 190px" padding="8px 10px 8px 10px">
-								<Link
-									href="settings-goose"
-									overflow-wrap="normal"
-									word-break="normal"
-									white-space="normal"
-									text-indent="0"
-									text-overflow="clip"
-									hyphens="manual"
-									text-decoration-line="initial"
-								>
-									Подписки GOOSE-сообщений
-								</Link>
+								Подписки GOOSE-сообщений{" \n"}
 								<br />
 								{"\n\n\n"}
 							</Components.BorderButton>

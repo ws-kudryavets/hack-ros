@@ -24,7 +24,7 @@ export default (() => {
 			<Text
 				as="p"
 				margin="6px 0"
-				font="--headline2"
+				font="normal 800 36px/1.2 --fontFamily-sans"
 				color="#5f5f5f"
 				width="100%"
 			>
@@ -41,11 +41,11 @@ export default (() => {
 			flex-direction="column"
 		>
 			<Stack margin-top="auto" color="--grey" font="--base">
-				<StackItem width="30%" md-width="100%" height="400px">
+				<StackItem width="40%" md-width="100%" height="400px">
 					<Text
 						as="p"
 						margin="6px 0"
-						font="--headline3"
+						font="normal 900 42px/1.2 --fontFamily-sans"
 						color="#000000"
 						width="100%"
 						height="400px"
@@ -102,8 +102,8 @@ export default (() => {
 						{"\n\n\n"}
 					</Text>
 				</StackItem>
-				<StackItem width="70%" md-width="100%">
-					<Image width="100%" height="500px" src="https://uploads.quarkly.io/5fae1bc508b41a001fec14bc/images/track-01.svg?v=2020-11-14T00:20:52.500Z" />
+				<StackItem width="60%" md-width="100%">
+					<Image width="120%" height="500px" src="https://uploads.quarkly.io/5fae1bc508b41a001fec14bc/images/track-01.svg?v=2020-11-14T00:20:52.500Z" />
 				</StackItem>
 			</Stack>
 			<Components.BlackButton

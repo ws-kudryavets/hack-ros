@@ -2,7 +2,7 @@ import React from "react";
 import theme from "theme";
 import { Theme, Link, Strong, Span, Text, Box, Image } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
-import { Override, Section, Stack, StackItem, SocialMedia } from "@quarkly/components";
+import { Override, Stack, StackItem, Section, SocialMedia } from "@quarkly/components";
 import * as Components from "components";
 export default (() => {
 	return <Theme theme={theme}>
@@ -14,15 +14,8 @@ export default (() => {
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/readme/cra/favicon-32x32.ico"} type={"image/x-icon"} />
 		</Helmet>
 		<Components.MenuTech />
-		<Section color="--light" padding="50px 0 50px 0" sm-padding="40px 0" position="relative">
-			<Override slot="SectionContent" width="100%" />
-			<Text
-				as="p"
-				margin="6px 0"
-				font="--headline3"
-				color="#5f5f5f"
-				width="100%"
-			>
+		<Components.TitleMain>
+			<Override slot="text">
 				<Strong
 					overflow-wrap="normal"
 					word-break="normal"
@@ -31,7 +24,7 @@ export default (() => {
 					text-overflow="clip"
 					hyphens="manual"
 				>
-					Тема 1.{" \n\n"}
+					Задание 1.{" \n\n"}
 				</Strong>
 				<Span
 					overflow-wrap="normal"
@@ -45,8 +38,9 @@ export default (() => {
 					<br />
 					{"\n\n\n"}
 				</Span>
-			</Text>
-		</Section>
+			</Override>
+		</Components.TitleMain>
+		<Components.Track />
 		<Section
 			padding="64px 0"
 			sm-padding="40px 0"
@@ -92,36 +86,7 @@ export default (() => {
 						{"    "}
 					</StackItem>
 				</StackItem>
-				<Section width="30%">
-					<Text font="normal 500 20px/1.5 --fontFamily-sans" color="--grey" margin="0 0px 16px 0px">
-						Оставьте ваш комментарий или вопрос
-					</Text>
-					<Box
-						width="100%"
-						height="200px"
-						background="#ffffff"
-						border-radius="5px"
-						border-width="1px"
-						border-style="solid"
-						border-color="--color-primary"
-					/>
-					<Section height="230px" />
-					<Components.BlueButton width="100%">
-						<Link
-							href="goose"
-							overflow-wrap="normal"
-							word-break="normal"
-							white-space="normal"
-							text-indent="0"
-							text-overflow="clip"
-							hyphens="manual"
-							color="#fff"
-							text-decoration-line="initial"
-						>
-							Перейти к заданию
-						</Link>
-					</Components.BlueButton>
-				</Section>
+				<Components.AskQuestionAndNext />
 			</Stack>
 		</Section>
 		<Section height="40px" quarkly-title="Footer">

@@ -31,7 +31,7 @@ export default (() => {
 					text-overflow="clip"
 					hyphens="manual"
 				>
-					Задание 3.{"  "}
+					Задание 4.{"  "}
 				</Strong>
 				<Span
 					overflow-wrap="normal"
@@ -61,14 +61,14 @@ export default (() => {
 					text-overflow="clip"
 					hyphens="manual"
 				>
-					Настройка IED на прием-передачу GOOSE-сообщений»{"  "}
+					Настройка сети»{"  "}
 					<br />
 					{"\n\n\n"}
 				</Span>
 			</Text>
 		</Section>
 		<Components.Track>
-			<Override slot="image" src="https://uploads.quarkly.io/5fae1bc508b41a001fec14bc/images/3.svg?v=2020-11-14T18:26:05.628Z" />
+			<Override slot="image" src="https://uploads.quarkly.io/5fae1bc508b41a001fec14bc/images/4.svg?v=2020-11-14T18:34:33.374Z" />
 		</Components.Track>
 		<Section
 			padding="64px 0 64px 0"
@@ -79,14 +79,14 @@ export default (() => {
 			margin="10px 0 0 0"
 		>
 			<Stack>
-				<StackItem width="30%" lg-width="100%" lg-order="2" margin="30px 0px 0px 0px">
+				<StackItem width="30%" lg-width="100%" lg-order="2" margin="0 0px 0px 0px">
 					<Override slot="StackItemContent" text-align="center" />
-					<Stack margin="0 -16px -16px -16px">
+					<Stack margin="0 -16px 0 -16px">
 						<Components.DragBox />
 						<Components.DragBox>
 							<Override slot="box" background="url(https://uploads.quarkly.io/5fae1bc508b41a001fec14bc/images/29-01-06.jpg?v=2020-11-14T09:37:16.369Z) 50% 0/cover no-repeat" />
 						</Components.DragBox>
-						<Components.DragBox>
+						<Components.DragBox margin="-150px 0px 0px 0px">
 							<Override slot="box" background="url(https://uploads.quarkly.io/5fae1bc508b41a001fec14bc/images/29-01-07.jpg?v=2020-11-14T09:37:16.127Z) 50% 0/cover no-repeat" />
 						</Components.DragBox>
 					</Stack>
@@ -94,7 +94,9 @@ export default (() => {
 				<StackItem width="70%" lg-width="100%">
 					<Override slot="StackItemContent" lg-margin-bottom="24px" flex-direction="column" />
 					<Text color="--grey" letter-spacing="1px" margin="0 0 10px 0" font="normal 500 20px/1.5 --fontFamily-sans">
-						Выберите необходимые устройства и перетащите на поле{"\n\n"}
+						Системный администратор опечатался при настройке параметров подключения{" "}
+						<br />
+						к сети. Исправьте ошибку и проверьте соединение.
 					</Text>
 					<Box
 						height="540px"
@@ -107,7 +109,9 @@ export default (() => {
 						<Stack margin="0 -16px -16px -16px" height="217px">
 							{"    "}
 							<Components.Comp2 />
-							<Components.Comp2 margin="10px 0px 0px 280px" />
+							<Components.Comp2 margin="10px 0px 0px 280px">
+								<Override slot="box" background="url(https://uploads.quarkly.io/5fae1bc508b41a001fec14bc/images/29-01-01.jpg?v=2020-11-14T18:50:27.083Z) 50% 0/cover no-repeat" width="100%" />
+							</Components.Comp2>
 							{"    "}
 						</Stack>
 						<Stack width="400px">
@@ -153,18 +157,7 @@ export default (() => {
 						<Section padding="0 0 0 0" margin="36px 0 0 0">
 							<Override slot="SectionContent" margin="0px 44.3125px 10px 44.3125px" padding="0px 0px 0 0px" />
 							<Components.BorderButton width="60%" margin="0px 0px 10px 190px" padding="8px 10px 8px 10px">
-								<Link
-									href="settings-goose"
-									overflow-wrap="normal"
-									word-break="normal"
-									white-space="normal"
-									text-indent="0"
-									text-overflow="clip"
-									hyphens="manual"
-									text-decoration-line="initial"
-								>
-									Подписки GOOSE-сообщений
-								</Link>
+								Проверить соединение{" "}
 								<br />
 								{"\n\n\n"}
 							</Components.BorderButton>
