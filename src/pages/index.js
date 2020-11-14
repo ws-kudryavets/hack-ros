@@ -16,7 +16,13 @@ export default (() => {
 			<meta property={"og:image"} content={"https://uploads.quarkly.io/5f44d0da669357001e60ed14/images/website-example-quarkly.png?v=2020-11-05T19:48:01.806Z"} />
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/readme/cra/favicon-32x32.ico"} type={"image/x-icon"} />
 		</Helmet>
-		<Components.MenuTech />
+		<Components.MenuTech>
+			<Override slot="button">
+				<Link href="start" color="#ffffff" text-decoration-line="initial">
+					Личный кабинет{"\n\n"}
+				</Link>
+			</Override>
+		</Components.MenuTech>
 		<Section
 			color="--light"
 			padding="100px 0"
@@ -99,7 +105,11 @@ export default (() => {
 									<Override slot="StackItemContent" flex-direction="column" />
 								</StackItem>
 								<StackItem width="100%">
-									<Components.BlackButton focus-background="#FFA750" disabled={false} type="submit" />
+									<Components.BlackButton focus-background="#FFA750" disabled={false} type="submit">
+										<Link href="#" color="#ffffff" text-decoration-line="initial">
+											Войти
+										</Link>
+									</Components.BlackButton>
 								</StackItem>
 							</Stack>
 						</Formspree>

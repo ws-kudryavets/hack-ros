@@ -3,12 +3,13 @@ import Index from "pages/index";
 import About from "pages/about";
 import Team from "pages/team";
 import Contact from "pages/contact";
-import Index1 from "pages/index1";
+import Start from "pages/start";
 import Index2 from "pages/index2";
 import Index11 from "pages/index11";
-import Index111 from "pages/index111";
+import Video from "pages/video";
 import Index112 from "pages/index112";
 import Index1121 from "pages/index1121";
+import Index11211 from "pages/index11211";
 import Page404 from "pages/page404";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { createGlobalStyle } from "styled-components";
@@ -30,12 +31,13 @@ export default () => (
 			<Route exact path='/about' component={About}/>
 			<Route exact path='/team' component={Team}/>
 			<Route exact path='/team/contact' component={Contact}/>
-			<Route exact path='/index1' component={Index1}/>
+			<Route exact path='/start' component={Start}/>
 			<Route exact path='/index2' component={Index2}/>
 			<Route exact path='/index11' component={Index11}/>
-			<Route exact path='/index111' component={Index111}/>
+			<Route exact path='/video' component={Video}/>
 			<Route exact path='/index112' component={Index112}/>
 			<Route exact path='/index1121' component={Index1121}/>
+			<Route exact path='/index11211' component={Index11211}/>
 			<Route component={Page404}/>
         </Switch>
     </Router>

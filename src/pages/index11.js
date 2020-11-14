@@ -89,20 +89,7 @@ export default (() => {
 								Коммутатор
 							</Link>
 						</StackItem>
-						<StackItem width="50%" sm-width="100%" height="200px">
-							<Override slot="StackItemContent" flex-direction="column" box-shadow="2px 4px 10px 0 rgba(0, 0, 0, 0.28)" background="#ffffff" />
-							<Box
-								width="100%"
-								margin="0 auto"
-								background="url(https://uploads.quarkly.io/5fae1bc508b41a001fec14bc/images/29-01-05.jpg?v=2020-11-14T09:37:16.129Z) 50% 0/cover no-repeat"
-								border-radius={0}
-								height="120px"
-							/>
-							<Link href="#" font="normal 500 18px/1.2 --fontFamily-sans" margin="20px 0px 10px 0px">
-								Кабель 
-RS485
-							</Link>
-						</StackItem>
+						<Components.DragBox />
 						<StackItem width="50%" sm-width="100%" height="200px">
 							<Override slot="StackItemContent" flex-direction="column" box-shadow="2px 4px 10px 0 rgba(0, 0, 0, 0.28)" background="#ffffff" />
 							<Box
