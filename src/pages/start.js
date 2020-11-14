@@ -1,8 +1,8 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Text, Span, Strong, Image, Box } from "@quarkly/widgets";
+import { Theme, Link, Text, Span, Strong, Image } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
-import { Override, StackItem, Section, Stack, SocialMedia } from "@quarkly/components";
+import { Override, StackItem, Section, Stack } from "@quarkly/components";
 import * as Components from "components";
 export default (() => {
 	return <Theme theme={theme}>
@@ -118,20 +118,7 @@ export default (() => {
 				</Link>
 			</Components.BlackButton>
 		</Section>
-		<Section height="40px" quarkly-title="Footer">
-			<Box
-				display="flex"
-				padding="12px 0"
-				justify-content="space-between"
-				align-items="center"
-				flex-direction="row"
-				md-flex-direction="column"
-			>
-				<Image width="120px" height="64px" src="https://uploads.quarkly.io/5fae1bc508b41a001fec14bc/images/logo2.png?v=2020-11-13T21:02:57.282Z" />
-				<SocialMedia facebook="https://www.facebook.com/official.rosseti/" vkontakte="https://vk.com/rosseti" instagram="https://www.instagram.com/rosseti_official/?hl=ru" />
-			</Box>
-		</Section>
-		<Box />
+		<Components.FooterTech />
 		<Link
 			font={"--capture"}
 			font-size={"10px"}

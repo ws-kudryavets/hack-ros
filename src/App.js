@@ -10,6 +10,7 @@ import Video from "pages/video";
 import Goose1 from "pages/goose1";
 import Goose2 from "pages/goose2";
 import Goose3 from "pages/goose3";
+import LessonTest from "pages/lessonTest";
 import Page404 from "pages/page404";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { createGlobalStyle } from "styled-components";
@@ -38,6 +39,7 @@ export default () => (
 			<Route exact path='/goose1' component={Goose1}/>
 			<Route exact path='/goose2' component={Goose2}/>
 			<Route exact path='/goose3' component={Goose3}/>
+			<Route exact path='/lesson-test' component={LessonTest}/>
 			<Route component={Page404}/>
         </Switch>
     </Router>

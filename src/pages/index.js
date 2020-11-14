@@ -1,8 +1,8 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Span, Text, Box, Input, Image } from "@quarkly/widgets";
+import { Theme, Link, Span, Text, Box, Image } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
-import { Override, StackItem, Stack, Formspree, Section, SocialMedia } from "@quarkly/components";
+import { Override, StackItem, Stack, Section, SocialMedia } from "@quarkly/components";
 import * as Components from "components";
 export default (() => {
 	return <Theme theme={theme}>
@@ -79,40 +79,7 @@ export default (() => {
 						<Text as="h3" font="--headline3" margin="0 0 20px 0">
 							Войти в систему
 						</Text>
-						<Formspree endpoint="https://formspree.io/f/mgepzkkr">
-							<Stack gap="16px">
-								<StackItem width="100%">
-									<Override slot="StackItemContent" flex-direction="column" />
-									<Text font="--base" margin="0 0 4px 0">
-										Логин
-									</Text>
-									<Input
-										width="100%"
-										name="email"
-										type="email"
-										required
-										placeholder="example@mail.com"
-									/>
-								</StackItem>
-								<StackItem width="100%">
-									<Override slot="StackItemContent" flex-direction="column" />
-									<Text font="--base" margin="0 0 4px 0">
-										Пароль
-									</Text>
-									<Input width="100%" type="text" name="password" placeholder="надежный пароль" />
-								</StackItem>
-								<StackItem width="100%">
-									<Override slot="StackItemContent" flex-direction="column" />
-								</StackItem>
-								<StackItem width="100%">
-									<Components.BlackButton focus-background="#FFA750" disabled={false} type="submit">
-										<Link href="#" color="#ffffff" text-decoration-line="initial">
-											Войти
-										</Link>
-									</Components.BlackButton>
-								</StackItem>
-							</Stack>
-						</Formspree>
+						<Components.LoginForm />
 					</Box>
 				</StackItem>
 			</Stack>

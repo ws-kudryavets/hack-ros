@@ -15,7 +15,8 @@ export default {
 				"5faf042d08b41a001fec194a",
 				"5fae1bc508b41a001fec14d5",
 				"5fae1bc508b41a001fec14d9",
-				"5fae1bc508b41a001fec14d1"
+				"5fae1bc508b41a001fec14d1",
+				"5fafe7d2badc03001fb12d33"
 			]
 		},
 		"5fae1bc508b41a001fec14d1": {
@@ -108,6 +109,11 @@ export default {
 			"id": "5fafcd372c4ef2001e325036",
 			"pageUrl": "goose3",
 			"name": "1-4 lesson"
+		},
+		"5fafe7d2badc03001fb12d33": {
+			"id": "5fafe7d2badc03001fb12d33",
+			"pageUrl": "lesson-test",
+			"name": "lesson-test"
 		}
 	},
 	"mode": "production",

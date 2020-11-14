@@ -71,16 +71,17 @@ export default (() => {
 						<Stack margin="0 -16px -16px -16px">
 							{"    "}{"    "}
 						</Stack>
-						<Components.Video>
+						<Components.Video padding="0 0px 0 0px">
 							<Override
 								slot="SectionContent"
 								align-self="center"
-								width="740.109px"
+								width="756.109px"
 								min-width="346px"
 								flex-direction="row-reverse"
 								align-items="center"
 								justify-content="center"
-								max-width="1285px"
+								max-width="1297px"
+								margin="0px 0 0px 0"
 							/>
 						</Components.Video>
 					</Box>
@@ -136,9 +137,6 @@ export default (() => {
 				<SocialMedia facebook="https://www.facebook.com/official.rosseti/" vkontakte="https://vk.com/rosseti" instagram="https://www.instagram.com/rosseti_official/?hl=ru" />
 			</Box>
 		</Section>
-		<Link href="#">
-			Some text
-		</Link>
 		<Link
 			font={"--capture"}
 			font-size={"10px"}
