@@ -105,24 +105,39 @@ export default (() => {
 								text-align="left"
 								margin="16px 0px 16px 20px"
 								color="--primary"
-								width="40px"
+								width="40%"
 							>
 								IED 1
 							</Text>
 							<Stack>
-								{"    "}
-								<StackItem width="50%" display="flex">
+								{"    "}{"    "}
+								<StackItem width="20%" display="flex" margin="0px 0px 0px 0px">
+									<Override slot="StackItemContent" width="40%" margin="0px 0px 0px 100px" />
 									{"        "}
-									<Text font="--lead" margin="0px 0px 0px 0px" display="inline-block">
-										{"            "}First Item{"\n        "}
+									<Text font="--lead" margin="0px 0px 0px 0px" display="inline-block" width="100%">
+										<Strong margin="0px 0px 0px 0" width="100%">
+											Вход 1
+										</Strong>
 									</Text>
 									{"    "}
 								</StackItem>
-								{"    "}
-								<StackItem width="50%" display="flex">
+								<StackItem width="20%" display="flex" margin="0px 0px 0px 150px">
+									<Override slot="StackItemContent" width="40%" />
 									{"        "}
 									<Text font="--lead" margin="0px 0px 0px 0px" display="inline-block">
-										{"            "}Second Item{"\n        "}
+										<Strong>
+											Вход 1
+										</Strong>
+									</Text>
+									{"    "}
+								</StackItem>
+								<StackItem width="20%" display="flex" margin="0px 0px 0px 100px">
+									<Override slot="StackItemContent" width="40%" />
+									{"        "}
+									<Text font="--lead" margin="0px 0px 0px 0px" display="inline-block">
+										<Strong>
+											Вход 1
+										</Strong>
 									</Text>
 									{"    "}
 								</StackItem>

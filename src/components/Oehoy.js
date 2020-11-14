@@ -1,7 +1,7 @@
 import React, { useState, useCallback } from 'react';
 import atomize from "@quarkly/atomize";
 import { useDrag, useDrop, DndProvider } from 'react-dnd';
-import { NativeTypes, HTML5Backend } from 'react-dnd-html5-backend';
+import { HTML5Backend } from 'react-dnd-html5-backend';
 import update from 'immutability-helper';
 import CompStandart from './CompStandart';
 import Comp2 from './Comp2';
