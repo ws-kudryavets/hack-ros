@@ -146,50 +146,61 @@ RS485
 					>
 						<Stack margin="0 -16px -16px -16px">
 							{"    "}
-							<Components.CompStandart width="20%" margin="10px 0px 0px 100px" opacity="0.3" box-shadow="inset 0 0 10px 0 rgba(6, 15, 40, 0.78)">
+							<Components.CompStandart width="20%" margin="10px 0px 0px 160px" opacity="0.3" box-shadow="inset 0 0 20px 0 rgba(6, 15, 40, 0.46)">
 								<Override slot="link" text-align="center" />
 								<Override slot="StackItemContent" background="#ffffff" box-shadow="0 0 0 0 0px" />
 							</Components.CompStandart>
-							<Components.CompStandart width="20%" margin="10px 0px 0px 280px" box-shadow="inset 0 0 10px 0 rgba(6, 15, 40, 0.78)" opacity="0.3">
+							<Components.CompStandart width="20%" margin="10px 0px 0px 280px" box-shadow="inset 0 0 20px 0 rgba(6, 15, 40, 0.46)" opacity="0.3">
 								<Override slot="link" text-align="center" />
 								<Override slot="StackItemContent" background="#ffffff" box-shadow="0 0 0 0 0px" />
 								<Override slot="box" width="100%" height="120px" />
 							</Components.CompStandart>
 							{"    "}
 						</Stack>
-						<Section />
+						<Stack>
+							{"    "}
+							<StackItem width="50%" display="flex">
+								{"        "}
+								<Box width="120px" height="60px" margin="0px 0px 0px 200px" />
+								{"    "}
+							</StackItem>
+							{"    "}
+							<StackItem width="50%" display="flex">
+								{"        "}{"    "}
+							</StackItem>
+						</Stack>
+						<Box />
 						<Stack width="400px">
 							{"    "}{"    "}
 						</Stack>
 						<StackItem>
-							<Override slot="StackItemContent" height="200px" width="100%" />
+							<Override slot="StackItemContent" height="200px" />
 							<Components.CompStandart margin="0px 0px 0px 0px" height="200px" width="300px">
 								<Override
 									slot="box"
 									background="url(https://uploads.quarkly.io/5fae1bc508b41a001fec14bc/images/30-01-01.jpg?v=2020-11-14T10:38:26.003Z) 50% 0/cover no-repeat"
 									height="150px"
-									width="100%"
+									width="290px"
 									padding="0 0px 0px 0px"
 									margin="5px auto 0 auto"
 								/>
 								<Override
 									slot="StackItemContent"
-									margin="0px 0px 0px 60px"
-									width="80%"
+									margin="0px 0px 0px 324px"
+									width="100%"
 									background="#ffffff"
 									opacity="0.3"
-									box-shadow="inset 0 0 10px 0 rgba(6, 15, 40, 0.78)"
+									box-shadow="inset 0 0 20px 0 rgba(6, 15, 40, 0.46)"
 								/>
 								<Override slot="link" text-align="center" margin="10px 0px 10px 0px">
 									Коммутатор
 									<br />
 									{"\n\n\n"}
 								</Override>
-								<Components.BlueButton />
 							</Components.CompStandart>
 						</StackItem>
 						<Section padding="0 0 0 0" margin="36px 0 0 0">
-							<Override slot="SectionContent" margin="0px 44.3125px 10px 44.3125px" padding="0px 0px 0 0px" />
+							<Override slot="SectionContent" margin="-10px 44.3125px 10px 44.3125px" padding="0px 0px 0 0px" />
 							<Components.BorderButton width="60%" margin="0px 0px 10px 190px" padding="8px 10px 8px 10px">
 								Подписки GOOSE-сообщений{" \n"}
 								<br />

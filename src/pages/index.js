@@ -80,14 +80,20 @@ export default (() => {
 									<Text font="--base" margin="0 0 4px 0">
 										Логин
 									</Text>
-									<Input width="100%" name="name" />
+									<Input
+										width="100%"
+										name="email"
+										type="email"
+										required
+										placeholder="example@mail.com"
+									/>
 								</StackItem>
 								<StackItem width="100%">
 									<Override slot="StackItemContent" flex-direction="column" />
 									<Text font="--base" margin="0 0 4px 0">
 										Пароль
 									</Text>
-									<Input width="100%" type="email" name="email" />
+									<Input width="100%" type="text" name="password" placeholder="надежный пароль" />
 								</StackItem>
 								<StackItem width="100%">
 									<Override slot="StackItemContent" flex-direction="column" />

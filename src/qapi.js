@@ -10,6 +10,7 @@ export default {
 				"5fafa665b83a2f001f2ddf30",
 				"5faf20f78996cc001edcd9b8",
 				"5fafb3d908b41a001fec1cc1",
+				"5fafc3b2b1c8af001eb52449",
 				"5faf042d08b41a001fec194a",
 				"5fae1bc508b41a001fec14d5",
 				"5fae1bc508b41a001fec14d9",
@@ -96,6 +97,11 @@ export default {
 			"id": "5fafb3d908b41a001fec1cc1",
 			"pageUrl": "index112",
 			"name": "1-2 lesson"
+		},
+		"5fafc3b2b1c8af001eb52449": {
+			"id": "5fafc3b2b1c8af001eb52449",
+			"pageUrl": "index1121",
+			"name": "1-3 lesson"
 		}
 	},
 	"mode": "production",

@@ -8,6 +8,7 @@ import Index2 from "pages/index2";
 import Index11 from "pages/index11";
 import Index111 from "pages/index111";
 import Index112 from "pages/index112";
+import Index1121 from "pages/index1121";
 import Page404 from "pages/page404";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { createGlobalStyle } from "styled-components";
@@ -34,6 +35,7 @@ export default () => (
 			<Route exact path='/index11' component={Index11}/>
 			<Route exact path='/index111' component={Index111}/>
 			<Route exact path='/index112' component={Index112}/>
+			<Route exact path='/index1121' component={Index1121}/>
 			<Route component={Page404}/>
         </Switch>
     </Router>
