@@ -70,9 +70,7 @@ const Box = ({
 	type,
 	isDropped
 }) => {
-	const [{
-		opacity
-	}, drag] = useDrag({
+	const [, drag] = useDrag({
 		item: {
 			name,
 			type
