@@ -25,7 +25,7 @@ const overrides = {
 		"props": {
 			"width": "90%",
 			"margin": "0px 0px 0px 8px",
-			"children": <Link href="goose1" color="#fff" text-decoration-line="initial">
+			"children": <Link href="goose3" color="#fff" text-decoration-line="initial">
 				Настроить
 			</Link>
 		}
