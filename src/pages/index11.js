@@ -162,13 +162,13 @@ RS485
 							{"    "}{"    "}
 						</Stack>
 						<StackItem>
-							<Override slot="StackItemContent" height="200px" />
-							<Components.CompStandart margin="0px 0px 0px 220px" height="200px" width="460px">
+							<Override slot="StackItemContent" height="200px" width="100%" />
+							<Components.CompStandart margin="0px 0px 0px 0px" height="200px" width="300px">
 								<Override
 									slot="box"
 									background="url(https://uploads.quarkly.io/5fae1bc508b41a001fec14bc/images/30-01-01.jpg?v=2020-11-14T10:38:26.003Z) 50% 0/cover no-repeat"
 									height="150px"
-									width="300px"
+									width="100%"
 									padding="0 0px 0px 0px"
 									margin="5px auto 0 auto"
 								/>
@@ -185,6 +185,7 @@ RS485
 									<br />
 									{"\n\n\n"}
 								</Override>
+								<Components.BlueButton />
 							</Components.CompStandart>
 						</StackItem>
 						<Section padding="0 0 0 0" margin="36px 0 0 0">

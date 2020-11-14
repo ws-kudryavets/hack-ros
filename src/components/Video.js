@@ -21,7 +21,7 @@ const Video = props => {
 		<div style={{
 			width: '100%'
 		}}>
-			<iframe title="video" width="100%" height="315" src="https://www.youtube.com/watch?v=tR1ECf4sEpw&feature=youtu.be&t=52"></iframe>
+			<iframe title="video" width="100%" height="315" src="https://www.youtube.com/embed/9J1ZG7pt3Bw"></iframe>
 		</div>
 	</Section>;
 };
