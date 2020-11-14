@@ -980,7 +980,7 @@ export default (() => {
 		<Section height="100px">
 			<Override slot="SectionContent" height="100px" />
 			<Components.BlueButton margin="60px 0px 0px 200px">
-				<Link href="goose1" color="#fff" text-decoration-line="initial">
+				<Link href="goose" color="#fff" text-decoration-line="initial">
 					Ответить
 				</Link>
 			</Components.BlueButton>
