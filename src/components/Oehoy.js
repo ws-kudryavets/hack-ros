@@ -37,25 +37,21 @@ const Dustbin = ({
 	lastDroppedItem,
 	onDrop
 }) => {
-	const [{
-		isOver,
-		canDrop
-	}, drop] = useDrop({
+	const [, drop] = useDrop({
 		accept,
 		drop: onDrop,
 		collect: monitor => ({
 			isOver: monitor.isOver(),
 			canDrop: monitor.canDrop()
 		})
-	});
-	const isActive = isOver && canDrop;
-	let backgroundColor = '#222';
-
-	if (isActive) {
-		backgroundColor = 'darkgreen';
-	} else if (canDrop) {
-		backgroundColor = 'darkkhaki';
-	}
+	}); // const isActive = isOver && canDrop;
+	// let backgroundColor = '#222';
+	// if (isActive) {
+	//     backgroundColor = 'darkgreen';
+	// }
+	// else if (canDrop) {
+	//     backgroundColor = 'darkkhaki';
+	// }
 
 	return <div ref={drop} style={{ ...style,
 		...(!lastDroppedItem ? {
