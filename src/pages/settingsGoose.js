@@ -2,7 +2,7 @@ import React from "react";
 import theme from "theme";
 import { Theme, Link, Strong, Span, Text, Input, Image, Box } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
-import { Override, Section, StackItem, Stack, SocialMedia } from "@quarkly/components";
+import { Override, Section, Stack, StackItem, SocialMedia } from "@quarkly/components";
 import * as Components from "components";
 export default (() => {
 	return <Theme theme={theme}>
@@ -100,110 +100,38 @@ export default (() => {
 								background="#ffffff"
 								height="200px"
 							/>
-							<Text font="normal 900 36px/1.2 --fontFamily-sans" text-align="left" margin="16px 0px 16px 20px" color="--primary">
+							<Text
+								font="normal 900 36px/1.2 --fontFamily-sans"
+								text-align="left"
+								margin="16px 0px 16px 20px"
+								color="--primary"
+								width="50%"
+							>
 								IED 1
 							</Text>
-							<Stack height="50px" margin="0 -16px -31px -16px">
+							<Stack height="36px" margin="0 -16px -31px -16px">
 								{"    "}
-								<StackItem width="50%" display="flex" height="36px">
-									<Override slot="StackItemContent" margin="0px 0px 0px 10px" width="50%" height="13px" />
-									{"        "}
-									<Text font="normal 500 24px/1.2 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif" margin="0px 0px 0px 10px" display="inline-block" height="27px">
-										Выход 1{" "}
-										<br />
-										{"\n\n\n"}
-									</Text>
-									{"    "}
-								</StackItem>
+								<Text font="normal 500 24px/1.2 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif" margin="0px 0px 0px 10px" display="inline-block">
+									Выход 1{" "}
+									<br />
+									{"\n\n\n"}
+								</Text>
 								{"    "}
-								<Input width="45%" border-color="--color-primary" height="36px" border-width="1px" />
-							</Stack>
-							<Stack margin="40px -16px -16px -16px">
-								{"    "}
-								<StackItem width="50%" display="flex" height="36px">
-									<Override slot="StackItemContent" margin="0px 0px 0px 10px" width="50%" />
-									{"        "}
-									<Text font="normal 500 24px/1.2 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif" margin="0px 0px 0px 10px" display="inline-block">
-										Выход 2{" "}
-										<br />
-										{"\n\n\n"}
-									</Text>
-									{"    "}
-								</StackItem>
-								{"    "}
-								<Input width="45%" border-color="--color-primary" height="36px" border-width="1px" />
-							</Stack>
-							<Stack margin="40px -16px -16px -16px">
-								{"    "}
-								<StackItem width="50%" display="flex" height="36px">
-									<Override slot="StackItemContent" margin="0px 0px 0px 10px" width="50%" />
-									{"        "}
-									<Text font="normal 500 24px/1.2 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif" margin="0px 0px 0px 10px" display="inline-block">
-										Выход 3
-										<br />
-										{"\n\n\n"}
-									</Text>
-									{"    "}
-								</StackItem>
-								{"    "}
-								<Input width="45%" border-color="--color-primary" height="36px" border-width="1px" />
-							</Stack>
-						</StackItem>
-						<StackItem width="100%" sm-width="100%" height="280px">
-							<Override
-								slot="StackItemContent"
-								flex-direction="column"
-								box-shadow="2px 4px 10px 0 rgba(0, 0, 0, 0.28)"
-								background="#ffffff"
-								height="200px"
-							/>
-							<Text font="normal 900 36px/1.2 --fontFamily-sans" text-align="left" margin="16px 0px 16px 20px" color="--primary">
-								IED 2
-							</Text>
-							<Stack height="50px" margin="0 -16px -31px -16px">
-								{"    "}
-								<StackItem width="50%" display="flex" height="36px">
-									<Override slot="StackItemContent" margin="0px 0px 0px 10px" width="50%" height="13px" />
-									{"        "}
-									<Text font="normal 500 24px/1.2 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif" margin="0px 0px 0px 10px" display="inline-block" height="27px">
-										Выход 1{" "}
-										<br />
-										{"\n\n\n"}
-									</Text>
-									{"    "}
-								</StackItem>
-								{"    "}
-								<Input width="45%" border-color="--color-primary" height="36px" border-width="1px" />
-							</Stack>
-							<Stack margin="40px -16px -16px -16px">
-								{"    "}
-								<StackItem width="50%" display="flex" height="36px">
-									<Override slot="StackItemContent" margin="0px 0px 0px 10px" width="50%" />
-									{"        "}
-									<Text font="normal 500 24px/1.2 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif" margin="0px 0px 0px 10px" display="inline-block">
-										Выход 2{" "}
-										<br />
-										{"\n\n\n"}
-									</Text>
-									{"    "}
-								</StackItem>
-								{"    "}
-								<Input width="45%" border-color="--color-primary" height="36px" border-width="1px" />
-							</Stack>
-							<Stack margin="40px -16px -16px -16px">
-								{"    "}
-								<StackItem width="50%" display="flex" height="36px">
-									<Override slot="StackItemContent" margin="0px 0px 0px 10px" width="50%" />
-									{"        "}
-									<Text font="normal 500 24px/1.2 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif" margin="0px 0px 0px 10px" display="inline-block">
-										Выход 3
-										<br />
-										{"\n\n\n"}
-									</Text>
-									{"    "}
-								</StackItem>
-								{"    "}
-								<Input width="45%" border-color="--color-primary" height="36px" border-width="1px" />
+								<Input width="5%" border-color="--color-primary" height="36px" border-width="1px" />
+								<Input
+									width="5%"
+									border-color="--color-primary"
+									height="36px"
+									border-width="1px"
+									margin="0px 0px 0px 40px"
+								/>
+								<Input
+									width="5%"
+									border-color="--color-primary"
+									height="36px"
+									border-width="1px"
+									margin="0px 0px 0px 40px"
+								/>
 							</Stack>
 						</StackItem>
 					</Stack>

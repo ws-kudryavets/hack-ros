@@ -58,7 +58,10 @@ const Dustbin = ({
 			opacity: 0.2
 		} : {})
 	}}>
-		{!lastDroppedItem ? <CompStandart /> : <Comp2 style={{
+		{!lastDroppedItem ? <CompStandart style={{
+			margin: 0,
+			width: 'inherit'
+		}} /> : <Comp2 style={{
 			margin: 0,
 			width: 'inherit'
 		}} />}
@@ -81,8 +84,14 @@ const Box = ({
 	});
 	return <div ref={drag} style={style}>
 		{isDropped ? <s>
-			<CompStandart />
-		</s> : <CompStandart />}
+			<CompStandart style={{
+				margin: 0,
+				width: 'inherit'
+			}} />
+		</s> : <CompStandart style={{
+			margin: 0,
+			width: 'inherit'
+		}} />}
 	</div>;
 };
 
@@ -93,12 +102,6 @@ const Container = () => {
 	}, {
 		accepts: [ItemTypes.FOOD],
 		lastDroppedItem: null
-	}, {
-		accepts: [ItemTypes.PAPER, ItemTypes.GLASS, NativeTypes.URL],
-		lastDroppedItem: null
-	}, {
-		accepts: [ItemTypes.PAPER, NativeTypes.FILE],
-		lastDroppedItem: null
 	}]);
 	const [boxes] = useState([{
 		name: 'Bottle',
@@ -106,9 +109,6 @@ const Container = () => {
 	}, {
 		name: 'Banana',
 		type: ItemTypes.FOOD
-	}, {
-		name: 'Magazine',
-		type: ItemTypes.PAPER
 	}]);
 	const [droppedBoxNames, setDroppedBoxNames] = useState([]);
 
@@ -137,6 +137,7 @@ const Container = () => {
 		display: 'flex'
 	}}>
 		<div style={{
+			width: '50%',
 			overflow: 'hidden',
 			clear: 'both'
 		}}>
@@ -146,9 +147,13 @@ const Container = () => {
 			}, index) => <Box name={name} type={type} isDropped={isDropped(name)} key={index} />)}
 		</div>
 		<div style={{
+			padding: '20px',
+			border: '4px dashed #999',
 			display: 'flex',
 			overflow: 'hidden',
-			clear: 'both'
+			clear: 'both',
+			width: '50%',
+			justifyContent: 'space-between'
 		}}>
 			{dustbins.map(({
 				accepts,
