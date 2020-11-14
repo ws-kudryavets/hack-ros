@@ -77,7 +77,7 @@ export default (() => {
 			color="--dark"
 			background="--color-light"
 			margin="-10px 0 0 0"
-			height="700px"
+			height="759px"
 		>
 			<Text font="normal 500 20px/1.5 --fontFamily-sans" color="#6F839F">
 				Задача подписать два устройства на
@@ -417,6 +417,14 @@ export default (() => {
 								margin="0px 0px 0px 40px"
 							/>
 						</Stack>
+					</StackItem>
+					<StackItem width="100%" display="flex" align-items="center" justify-content="center">
+						<Override slot="StackItemContent" align-items="center" justify-content="center" />
+						<Components.BlueButton margin="20px 0px 0px 0">
+							<Link href="goose-final" color="#fff" text-decoration-line="initial">
+								Отправить
+							</Link>
+						</Components.BlueButton>
 					</StackItem>
 				</Stack>
 			</StackItem>

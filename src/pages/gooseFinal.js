@@ -68,7 +68,7 @@ export default (() => {
 				</Span>
 			</Text>
 		</Section>
-		<Components.Track>
+		<Components.Track height="75px">
 			<Override slot="image" src="https://uploads.quarkly.io/5fae1bc508b41a001fec14bc/images/3.svg?v=2020-11-14T18:26:05.628Z" />
 		</Components.Track>
 		<Section
@@ -107,10 +107,12 @@ export default (() => {
 					>
 						<Stack margin="0 -16px -16px -16px" height="217px">
 							{"    "}
-							<Components.Comp2 />
+							<Components.Comp2>
+								<Override slot="blueButton" disabled />
+							</Components.Comp2>
 							<StackItem margin="0px 0px 0px 37px">
 								<Override slot="StackItemContent" flex-direction="column" align-items="center" justify-content="flex-start" />
-								<Button height="36px">
+								<Button height="36px" width="100%">
 									<Link
 										href="goose11"
 										overflow-wrap="normal"
@@ -132,9 +134,11 @@ export default (() => {
 									padding="0px 0px 0px 0px"
 									margin="14px 0px 0px 0px"
 								/>
-								<Image width="64px" height="64px" src="https://uploads.quarkly.io/5fae1bc508b41a001fec14bc/images/Asset%201.png?v=2020-11-14T18:48:37.148Z" />
+								<Image width="100px" height="64px" src="https://uploads.quarkly.io/5fae1bc508b41a001fec14bc/images/Asset%201.png?v=2020-11-14T18:48:37.148Z" />
 							</StackItem>
-							<Components.Comp2 margin="10px 0px 0px 47px" />
+							<Components.Comp2 margin="10px 0px 0px 47px">
+								<Override slot="blueButton" disabled />
+							</Components.Comp2>
 							{"    "}
 						</Stack>
 						<Stack width="400px">
@@ -160,7 +164,7 @@ export default (() => {
 									border-radius={0}
 									padding="0 0px 0px 0px"
 								/>
-								<Components.BlueButton width="50%" margin="16px 0px 10px 110px">
+								<Components.BlueButton width="50%" margin="16px 0px 10px 110px" disabled>
 									<Link
 										href="goose2"
 										overflow-wrap="normal"
@@ -179,11 +183,36 @@ export default (() => {
 						</StackItem>
 						<Section padding="0 0 0 0" margin="36px 0 0 0">
 							<Override slot="SectionContent" margin="0px 44.3125px 10px 44.3125px" padding="0px 0px 0 0px" />
-							<Components.BorderButton width="60%" margin="0px 0px 10px 190px" padding="8px 10px 8px 10px">
+							<Button
+								padding="8px 10px 8px 10px"
+								font="--base"
+								letter-spacing="2px"
+								z-index="5"
+								md-display="none"
+								white-space="nowrap"
+								hover-transform="translateY(-4px)"
+								transition="transform --transitionDuration-fast --transitionTimingFunction-easeInOut 0s"
+								border-color="#0077cc"
+								background="#ffffff"
+								color="#0077cc"
+								border-width="2px"
+								active-border-width="2px"
+								active-border-color="#ffa750"
+								border-style="solid"
+								disabled-color="#ffffff"
+								active-background="#ffa750"
+								focus-border-width="1px"
+								width="60%"
+								margin="0px 0px 10px 190px"
+								disabled
+								disabled-background="--color-primary"
+								disabled-opacity="0.3"
+								border-radius={0}
+							>
 								Подписки GOOSE-сообщений{" \n"}
 								<br />
 								{"\n\n\n"}
-							</Components.BorderButton>
+							</Button>
 						</Section>
 					</Box>
 				</StackItem>
