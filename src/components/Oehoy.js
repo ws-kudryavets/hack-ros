@@ -20,16 +20,16 @@ const styleBox = {
 	float: 'left'
 };
 const style = {
-	height: '12rem',
-	width: '12rem',
-	marginRight: '1.5rem',
-	marginBottom: '1.5rem',
-	color: 'white',
-	padding: '1rem',
-	textAlign: 'center',
-	fontSize: '1rem',
-	lineHeight: 'normal',
-	float: 'left'
+	height: '205px',
+	width: '216px' // marginRight: '1.5rem',
+	// marginBottom: '1.5rem',
+	// color: 'white',
+	// padding: '1rem',
+	// textAlign: 'center',
+	// fontSize: '1rem',
+	// lineHeight: 'normal',
+	// float: 'left',
+
 };
 
 const Dustbin = ({
@@ -58,7 +58,9 @@ const Dustbin = ({
 	}
 
 	return <div ref={drop} style={{ ...style,
-		backgroundColor
+		...(!lastDroppedItem ? {
+			opacity: 0.2
+		} : {})
 	}}>
 		{!lastDroppedItem ? <CompStandart /> : <Comp2 />}
 	</div>;
@@ -136,16 +138,9 @@ const Container = () => {
 			}
 		}));
 	}, [droppedBoxNames, dustbins]);
-	return <div>
-		<div style={{
-			overflow: 'hidden',
-			clear: 'both'
-		}}>
-			{dustbins.map(({
-				accepts,
-				lastDroppedItem
-			}, index) => <Dustbin accept={accepts} lastDroppedItem={lastDroppedItem} onDrop={item => handleDrop(index, item)} key={index} />)}
-		</div>
+	return <div style={{
+		display: 'flex'
+	}}>
 		<div style={{
 			overflow: 'hidden',
 			clear: 'both'
@@ -154,6 +149,16 @@ const Container = () => {
 				name,
 				type
 			}, index) => <Box name={name} type={type} isDropped={isDropped(name)} key={index} />)}
+		</div>
+		<div style={{
+			display: 'flex',
+			overflow: 'hidden',
+			clear: 'both'
+		}}>
+			{dustbins.map(({
+				accepts,
+				lastDroppedItem
+			}, index) => <Dustbin accept={accepts} lastDroppedItem={lastDroppedItem} onDrop={item => handleDrop(index, item)} key={index} />)}
 		</div>
 	</div>;
 };
