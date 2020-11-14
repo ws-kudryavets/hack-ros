@@ -9,16 +9,16 @@ const ItemTypes = {
 	FOOD: 'food',
 	GLASS: 'glass',
 	PAPER: 'paper'
-};
-const styleBox = {
-	border: '1px dashed gray',
-	backgroundColor: 'white',
-	padding: '0.5rem 1rem',
-	marginRight: '1.5rem',
-	marginBottom: '1.5rem',
-	cursor: 'move',
-	float: 'left'
-};
+}; // const styleBox = {
+//     border: '1px dashed gray',
+//     backgroundColor: 'white',
+//     padding: '0.5rem 1rem',
+//     marginRight: '1.5rem',
+//     marginBottom: '1.5rem',
+//     cursor: 'move',
+//     float: 'left',
+// };
+
 const style = {
 	height: '205px',
 	width: '216px' // marginRight: '1.5rem',
