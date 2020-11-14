@@ -3,6 +3,8 @@ import atomize from "@quarkly/atomize";
 import { useDrag, useDrop, DndProvider } from 'react-dnd';
 import { NativeTypes, HTML5Backend } from 'react-dnd-html5-backend';
 import update from 'immutability-helper';
+import CompStandart from './CompStandart';
+import Comp2 from './Comp2';
 const ItemTypes = {
 	FOOD: 'food',
 	GLASS: 'glass',
@@ -58,11 +60,7 @@ const Dustbin = ({
 	return <div ref={drop} style={{ ...style,
 		backgroundColor
 	}}>
-		{isActive ? 'Release to drop' : `This dustbin accepts: ${accept.join(', ')}`}
-		{lastDroppedItem && <p>
-			Last dropped: 
-			{JSON.stringify(lastDroppedItem)}
-		</p>}
+		{!lastDroppedItem ? <CompStandart /> : <Comp2 />}
 	</div>;
 };
 
