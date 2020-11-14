@@ -1,6 +1,6 @@
 import React from "react";
 import { useOverrides, Override, StackItem } from "@quarkly/components";
-import { Box } from "@quarkly/widgets";
+import { Box, Link } from "@quarkly/widgets";
 import BlueButton from "./BlueButton";
 const defaultProps = {
 	"width": "20%",
@@ -25,7 +25,9 @@ const overrides = {
 		"props": {
 			"width": "90%",
 			"margin": "0px 0px 0px 8px",
-			"children": "Настроить"
+			"children": <Link href="goose1" color="#fff" text-decoration-line="initial">
+				Настроить
+			</Link>
 		}
 	}
 };

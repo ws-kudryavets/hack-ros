@@ -5,11 +5,11 @@ import Team from "pages/team";
 import Contact from "pages/contact";
 import Start from "pages/start";
 import Index2 from "pages/index2";
-import Index11 from "pages/index11";
+import Goose from "pages/goose";
 import Video from "pages/video";
-import Index112 from "pages/index112";
-import Index1121 from "pages/index1121";
-import Index11211 from "pages/index11211";
+import Goose1 from "pages/goose1";
+import Goose2 from "pages/goose2";
+import Goose3 from "pages/goose3";
 import Page404 from "pages/page404";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { createGlobalStyle } from "styled-components";
@@ -33,11 +33,11 @@ export default () => (
 			<Route exact path='/team/contact' component={Contact}/>
 			<Route exact path='/start' component={Start}/>
 			<Route exact path='/index2' component={Index2}/>
-			<Route exact path='/index11' component={Index11}/>
+			<Route exact path='/goose' component={Goose}/>
 			<Route exact path='/video' component={Video}/>
-			<Route exact path='/index112' component={Index112}/>
-			<Route exact path='/index1121' component={Index1121}/>
-			<Route exact path='/index11211' component={Index11211}/>
+			<Route exact path='/goose1' component={Goose1}/>
+			<Route exact path='/goose2' component={Goose2}/>
+			<Route exact path='/goose3' component={Goose3}/>
 			<Route component={Page404}/>
         </Switch>
     </Router>

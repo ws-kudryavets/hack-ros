@@ -86,7 +86,7 @@ export default {
 		},
 		"5faf20f78996cc001edcd9b8": {
 			"id": "5faf20f78996cc001edcd9b8",
-			"pageUrl": "index11",
+			"pageUrl": "goose",
 			"name": "1-1 lesson"
 		},
 		"5fafa665b83a2f001f2ddf30": {
@@ -96,17 +96,17 @@ export default {
 		},
 		"5fafb3d908b41a001fec1cc1": {
 			"id": "5fafb3d908b41a001fec1cc1",
-			"pageUrl": "index112",
+			"pageUrl": "goose1",
 			"name": "1-2 lesson"
 		},
 		"5fafc3b2b1c8af001eb52449": {
 			"id": "5fafc3b2b1c8af001eb52449",
-			"pageUrl": "index1121",
+			"pageUrl": "goose2",
 			"name": "1-3 lesson"
 		},
 		"5fafcd372c4ef2001e325036": {
 			"id": "5fafcd372c4ef2001e325036",
-			"pageUrl": "index11211",
+			"pageUrl": "goose3",
 			"name": "1-4 lesson"
 		}
 	},
