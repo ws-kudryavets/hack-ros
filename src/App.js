@@ -13,6 +13,8 @@ import Goose11 from "pages/goose11";
 import GooseFinal from "pages/gooseFinal";
 import Goose31 from "pages/goose31";
 import Oehoy from "pages/oehoy";
+import Flexeble from "pages/flexeble";
+import Final from "pages/final";
 import Page404 from "pages/page404";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { createGlobalStyle } from "styled-components";
@@ -44,6 +46,8 @@ export default () => (
 			<Route exact path='/goose-final' component={GooseFinal}/>
 			<Route exact path='/goose31' component={Goose31}/>
 			<Route exact path='/oehoy' component={Oehoy}/>
+			<Route exact path='/flexeble' component={Flexeble}/>
+			<Route exact path='/final' component={Final}/>
 			<Route component={Page404}/>
         </Switch>
     </Router>

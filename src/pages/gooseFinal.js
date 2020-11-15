@@ -128,7 +128,7 @@ export default (() => {
 								<Override slot="StackItemContent" flex-direction="column" align-items="center" justify-content="flex-start" />
 								<Button height="36px" width="100%">
 									<Link
-										href="goose11"
+										href="flexeble"
 										overflow-wrap="normal"
 										word-break="normal"
 										white-space="normal"

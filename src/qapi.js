@@ -15,6 +15,8 @@ export default {
 				"5fafcd372c4ef2001e325036",
 				"5fb021258996cc001edce0a2",
 				"5fb022f38996cc001edce0b4",
+				"5fb077118996cc001edce2b5",
+				"5fb079dab1c8af001eb52925",
 				"5faf20f78996cc001edcd9b8",
 				"5fb02281b83a2f001f2de3ff",
 				"5fb027592c4ef2001e3252da",
@@ -109,6 +111,16 @@ export default {
 			"id": "5fb0435579530b001fd271ac",
 			"pageUrl": "oehoy",
 			"name": "3 oehoy"
+		},
+		"5fb077118996cc001edce2b5": {
+			"id": "5fb077118996cc001edce2b5",
+			"pageUrl": "flexeble",
+			"name": "5"
+		},
+		"5fb079dab1c8af001eb52925": {
+			"id": "5fb079dab1c8af001eb52925",
+			"pageUrl": "final",
+			"name": "Final"
 		}
 	},
 	"mode": "production",

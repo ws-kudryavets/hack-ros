@@ -1,8 +1,8 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Strong, Span, Text, Box, Image } from "@quarkly/widgets";
+import { Theme, Link, Strong, Span, Text, Input, Box, Image } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
-import { Override, Section, SocialMedia } from "@quarkly/components";
+import { Override, Stack, StackItem, Section, SocialMedia } from "@quarkly/components";
 import * as Components from "components";
 export default (() => {
 	return <Theme theme={theme}>
@@ -14,15 +14,8 @@ export default (() => {
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/readme/cra/favicon-32x32.ico"} type={"image/x-icon"} />
 		</Helmet>
 		<Components.MenuTech />
-		<Section color="--light" padding="50px 0 50px 0" sm-padding="40px 0" position="relative">
-			<Override slot="SectionContent" />
-			<Text
-				as="p"
-				margin="6px 0"
-				font="--headline3"
-				color="#5f5f5f"
-				width="100%"
-			>
+		<Components.TitleMain>
+			<Override slot="text">
 				<Strong
 					overflow-wrap="normal"
 					word-break="normal"
@@ -31,7 +24,7 @@ export default (() => {
 					text-overflow="clip"
 					hyphens="manual"
 				>
-					Задание 3.{"  "}
+					Тема 5.{" \n\n"}
 				</Strong>
 				<Span
 					overflow-wrap="normal"
@@ -41,49 +34,62 @@ export default (() => {
 					text-overflow="clip"
 					hyphens="manual"
 				>
-					Тренажёр
-				</Span>
-				<Strong
-					overflow-wrap="normal"
-					word-break="normal"
-					white-space="normal"
-					text-indent="0"
-					text-overflow="clip"
-					hyphens="manual"
-				>
-					{" "}«
-				</Strong>
-				<Span
-					overflow-wrap="normal"
-					word-break="normal"
-					white-space="normal"
-					text-indent="0"
-					text-overflow="clip"
-					hyphens="manual"
-				>
-					Настройка IED на прием-передачу GOOSE-сообщений»{"  "}
+					Рефлексия{" "}
 					<br />
 					{"\n\n\n"}
 				</Span>
-			</Text>
-		</Section>
+			</Override>
+		</Components.TitleMain>
 		<Components.Track>
-			<Override slot="image" src="https://uploads.quarkly.io/5fae1bc508b41a001fec14bc/images/3.svg?v=2020-11-14T20:53:34.392Z" />
+			<Override slot="image" src="https://uploads.quarkly.io/5fae1bc508b41a001fec14bc/images/5.svg?v=2020-11-15T00:38:06.502Z" />
 		</Components.Track>
-		<Box>
-			<Text font="--lead" margin="16px 0px 16px 60px">
-				Перетащите блоки на поле и выполните настройки
-			</Text>
-		</Box>
 		<Section
-			padding="64px 0 64px 0"
+			padding="64px 0"
 			sm-padding="40px 0"
 			font="--base"
 			color="--dark"
 			background="--color-light"
-			margin="10px 0 0 0"
 		>
-			<Components.Oehoy />
+			<Stack>
+				<StackItem width="70%" lg-width="100%">
+					<Override slot="StackItemContent" lg-margin-bottom="24px" flex-direction="column" />
+					<Text color="--grey" letter-spacing="1px" margin="0 0 10px 0" font="normal 500 20px/1.5 --fontFamily-sans">
+						Ответьте на вопрос.{" "}
+						<br />
+						Какие полезные навыки вы приобрели в рамках прохождения занятия? И как вы сможете их применять в повседневной работе.
+					</Text>
+					<Box
+						width="100%"
+						border-style="none"
+						border-width="1px"
+						border-color="--color-primary"
+						background="#ffffff"
+					>
+						<Input width="100%" height="400px" />
+						<Stack margin="0 -16px -16px -16px">
+							{"    "}{"    "}
+						</Stack>
+					</Box>
+				</StackItem>
+			</Stack>
+			<StackItem>
+				<Override slot="StackItemContent" justify-content="flex-end" />
+				<Components.BlueButton width="30%" height="36px" margin="0px 0px 0px 0" color="#ffffff">
+					<Link
+						href="final"
+						overflow-wrap="normal"
+						word-break="normal"
+						white-space="normal"
+						text-indent="0"
+						text-overflow="clip"
+						hyphens="manual"
+						color="#fff"
+						text-decoration-line="initial"
+					>
+						Сохранить
+					</Link>
+				</Components.BlueButton>
+			</StackItem>
 		</Section>
 		<Section height="40px" quarkly-title="Footer">
 			<Box
@@ -98,6 +104,7 @@ export default (() => {
 				<SocialMedia facebook="https://www.facebook.com/official.rosseti/" vkontakte="https://vk.com/rosseti" instagram="https://www.instagram.com/rosseti_official/?hl=ru" />
 			</Box>
 		</Section>
+		<Box />
 		<Link
 			font={"--capture"}
 			font-size={"10px"}
