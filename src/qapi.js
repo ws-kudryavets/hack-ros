@@ -9,17 +9,16 @@ export default {
 				"5faf018ab1c8af001eb51fc6",
 				"5fafa665b83a2f001f2ddf30",
 				"5fafe7d2badc03001fb12d33",
-				"5faf20f78996cc001edcd9b8",
-				"5fafb3d908b41a001fec1cc1",
+				"5fb0435579530b001fd271ac",
 				"5fafc3b2b1c8af001eb52449",
+				"5fafb3d908b41a001fec1cc1",
 				"5fafcd372c4ef2001e325036",
 				"5fb021258996cc001edce0a2",
 				"5fb022f38996cc001edce0b4",
+				"5faf20f78996cc001edcd9b8",
 				"5fb02281b83a2f001f2de3ff",
 				"5fb027592c4ef2001e3252da",
-				"5fae1bc508b41a001fec14d1",
-				"5fb040ca08b41a001fec2044",
-				"5fb0435579530b001fd271ac"
+				"5fae1bc508b41a001fec14d1"
 			]
 		},
 		"5fae1bc508b41a001fec14d1": {
@@ -59,7 +58,7 @@ export default {
 		"5faf20f78996cc001edcd9b8": {
 			"id": "5faf20f78996cc001edcd9b8",
 			"pageUrl": "goose",
-			"name": "1-1 lesson"
+			"name": "1-1 lesson ( dont used )"
 		},
 		"5fafa665b83a2f001f2ddf30": {
 			"id": "5fafa665b83a2f001f2ddf30",
@@ -69,52 +68,47 @@ export default {
 		"5fafb3d908b41a001fec1cc1": {
 			"id": "5fafb3d908b41a001fec1cc1",
 			"pageUrl": "goose1",
-			"name": "1-2 lesson"
+			"name": "4 lesson"
 		},
 		"5fafc3b2b1c8af001eb52449": {
 			"id": "5fafc3b2b1c8af001eb52449",
 			"pageUrl": "goose2",
-			"name": "1-3 lesson"
+			"name": "3 pass to 4"
 		},
 		"5fafcd372c4ef2001e325036": {
 			"id": "5fafcd372c4ef2001e325036",
 			"pageUrl": "goose3",
-			"name": "1-4 lesson"
+			"name": "4 message"
 		},
 		"5fafe7d2badc03001fb12d33": {
 			"id": "5fafe7d2badc03001fb12d33",
 			"pageUrl": "goose-test",
-			"name": "lesson-test"
+			"name": "2 lesson-test"
 		},
 		"5fb021258996cc001edce0a2": {
 			"id": "5fb021258996cc001edce0a2",
 			"pageUrl": "settings-goose",
-			"name": "switch"
+			"name": "4-2 switch"
 		},
 		"5fb02281b83a2f001f2de3ff": {
 			"id": "5fb02281b83a2f001f2de3ff",
 			"pageUrl": "goose11",
-			"name": "lesson 4"
+			"name": "lesson 4 ( dont used )"
 		},
 		"5fb022f38996cc001edce0b4": {
 			"id": "5fb022f38996cc001edce0b4",
 			"pageUrl": "goose-final",
-			"name": "1-2  final lessons"
+			"name": "4-3final lessons"
 		},
 		"5fb027592c4ef2001e3252da": {
 			"id": "5fb027592c4ef2001e3252da",
 			"pageUrl": "goose31",
-			"name": "lesson 4-2"
-		},
-		"5fb040ca08b41a001fec2044": {
-			"id": "5fb040ca08b41a001fec2044",
-			"pageUrl": "goose4",
-			"name": "index"
+			"name": "lesson 4-2 ( dont used )"
 		},
 		"5fb0435579530b001fd271ac": {
 			"id": "5fb0435579530b001fd271ac",
 			"pageUrl": "oehoy",
-			"name": "oehoy"
+			"name": "3 oehoy"
 		}
 	},
 	"mode": "production",

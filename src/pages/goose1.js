@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Strong, Span, Text, Box, Image } from "@quarkly/widgets";
+import { Theme, Link, Strong, Text, Box, Image } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { Override, Section, Stack, StackItem, SocialMedia } from "@quarkly/components";
 import * as Components from "components";
@@ -23,48 +23,14 @@ export default (() => {
 				color="#5f5f5f"
 				width="100%"
 			>
-				<Strong
-					overflow-wrap="normal"
-					word-break="normal"
-					white-space="normal"
-					text-indent="0"
-					text-overflow="clip"
-					hyphens="manual"
-				>
-					Задание 3.{"  "}
+				<Strong>
+					Задание 3.{"  "}
 				</Strong>
-				<Span
-					overflow-wrap="normal"
-					word-break="normal"
-					white-space="normal"
-					text-indent="0"
-					text-overflow="clip"
-					hyphens="manual"
-				>
-					Тренажёр
-				</Span>
-				<Strong
-					overflow-wrap="normal"
-					word-break="normal"
-					white-space="normal"
-					text-indent="0"
-					text-overflow="clip"
-					hyphens="manual"
-				>
-					{" "}«
+				Тренажёр
+				<Strong>
+					{" "}«
 				</Strong>
-				<Span
-					overflow-wrap="normal"
-					word-break="normal"
-					white-space="normal"
-					text-indent="0"
-					text-overflow="clip"
-					hyphens="manual"
-				>
-					Настройка IED на прием-передачу GOOSE-сообщений»{"  "}
-					<br />
-					{"\n\n\n"}
-				</Span>
+				Настройка IED на прием-передачу GOOSE-сообщений»{"  "}
 			</Text>
 		</Section>
 		<Components.Track>

@@ -108,7 +108,21 @@ export default (() => {
 						<Stack margin="0 -16px -16px -16px" height="217px">
 							{"    "}
 							<Components.Comp2>
-								<Override slot="blueButton" disabled />
+								<Override slot="blueButton" disabled>
+									<Link
+										href="goose3"
+										color="#fff"
+										text-decoration-line="initial"
+										overflow-wrap="normal"
+										word-break="normal"
+										white-space="normal"
+										text-indent="0"
+										text-overflow="clip"
+										hyphens="manual"
+									>
+										Настроить
+									</Link>
+								</Override>
 							</Components.Comp2>
 							<StackItem margin="0px 0px 0px 37px">
 								<Override slot="StackItemContent" flex-direction="column" align-items="center" justify-content="flex-start" />
