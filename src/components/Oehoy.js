@@ -9,27 +9,10 @@ const ItemTypes = {
 	FOOD: 'food',
 	GLASS: 'glass',
 	PAPER: 'paper'
-}; // const styleBox = {
-//     border: '1px dashed gray',
-//     backgroundColor: 'white',
-//     padding: '0.5rem 1rem',
-//     marginRight: '1.5rem',
-//     marginBottom: '1.5rem',
-//     cursor: 'move',
-//     float: 'left',
-// };
-
+};
 const style = {
 	height: '205px',
-	width: '216px' // marginRight: '1.5rem',
-	// marginBottom: '1.5rem',
-	// color: 'white',
-	// padding: '1rem',
-	// textAlign: 'center',
-	// fontSize: '1rem',
-	// lineHeight: 'normal',
-	// float: 'left',
-
+	width: '216px'
 };
 
 const Dustbin = ({
@@ -44,15 +27,7 @@ const Dustbin = ({
 			isOver: monitor.isOver(),
 			canDrop: monitor.canDrop()
 		})
-	}); // const isActive = isOver && canDrop;
-	// let backgroundColor = '#222';
-	// if (isActive) {
-	//     backgroundColor = 'darkgreen';
-	// }
-	// else if (canDrop) {
-	//     backgroundColor = 'darkkhaki';
-	// }
-
+	});
 	return <div ref={drop} style={{ ...style,
 		...(!lastDroppedItem ? {
 			opacity: 0.2
@@ -148,7 +123,7 @@ const Container = () => {
 		</div>
 		<div style={{
 			padding: '20px',
-			border: '4px dashed #999',
+			border: '2px dashed #999',
 			display: 'flex',
 			overflow: 'hidden',
 			clear: 'both',

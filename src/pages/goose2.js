@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Strong, Span, Text, Image, Box } from "@quarkly/widgets";
+import { Theme, Link, Strong, Text, Image, Box } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { Override, Section, Stack, StackItem, SocialMedia } from "@quarkly/components";
 import * as Components from "components";
@@ -31,18 +31,9 @@ export default (() => {
 					text-overflow="clip"
 					hyphens="manual"
 				>
-					Задание 3.{"  "}
+					Задание 4.{"  "}
 				</Strong>
-				<Span
-					overflow-wrap="normal"
-					word-break="normal"
-					white-space="normal"
-					text-indent="0"
-					text-overflow="clip"
-					hyphens="manual"
-				>
-					Тренажёр{" "}
-				</Span>
+				Тренажёр
 				<Strong
 					overflow-wrap="normal"
 					word-break="normal"
@@ -51,22 +42,14 @@ export default (() => {
 					text-overflow="clip"
 					hyphens="manual"
 				>
-					«
+					{" "}«
 				</Strong>
-				<Span
-					overflow-wrap="normal"
-					word-break="normal"
-					white-space="normal"
-					text-indent="0"
-					text-overflow="clip"
-					hyphens="manual"
-				>
-					Настройка IED на прием-передачу GOOSE-сообщений»{"  "}
-					<br />
-					{"\n\n\n"}
-				</Span>
+				Настройка IED на прием-передачу GOOSE-сообщений»{"  "}
 			</Text>
 		</Section>
+		<Components.Track>
+			<Override slot="image" src="https://uploads.quarkly.io/5fae1bc508b41a001fec14bc/images/3.svg?v=2020-11-14T20:53:34.392Z" />
+		</Components.Track>
 		<Section
 			padding="64px 0 64px 0"
 			sm-padding="40px 0"
@@ -110,13 +93,7 @@ export default (() => {
 					<Text color="#6F839F" letter-spacing="1px" margin="34px 0 10px 0" font="normal 500 20px/1.5 --fontFamily-sans">
 						Необходимо правильно задать IP адрес
 						<br />
-						и маску подсети. Правильность настройки
-						<br />
-						заключается в том, чтобы все устройства
-						<br />
-						были в одной подсети с одинаковой
-						<br />
-						маской.
+						и маску подсети. Правильность настройки заключается в том, чтобы все устройства были в одной подсети с одинаковой маской.
 						<br />
 						{"\n\n\n"}
 					</Text>

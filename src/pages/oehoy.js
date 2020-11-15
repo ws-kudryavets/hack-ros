@@ -70,6 +70,9 @@ export default (() => {
 		<Components.Track>
 			<Override slot="image" src="https://uploads.quarkly.io/5fae1bc508b41a001fec14bc/images/3.svg?v=2020-11-14T20:53:34.392Z" />
 		</Components.Track>
+		<Text font="--lead" margin="16px 0px 16px 60px">
+			Перетащите блоки на поле и выполните настройки
+		</Text>
 		<Section
 			padding="64px 0 64px 0"
 			sm-padding="40px 0"

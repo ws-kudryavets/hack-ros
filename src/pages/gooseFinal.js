@@ -32,7 +32,7 @@ export default (() => {
 					text-overflow="clip"
 					hyphens="manual"
 				>
-					Задание 3.{"  "}
+					Задание 4.{"  "}
 				</Strong>
 				<Span
 					overflow-wrap="normal"
@@ -69,7 +69,7 @@ export default (() => {
 			</Text>
 		</Section>
 		<Components.Track height="75px">
-			<Override slot="image" src="https://uploads.quarkly.io/5fae1bc508b41a001fec14bc/images/3.svg?v=2020-11-14T18:26:05.628Z" />
+			<Override slot="image" src="https://uploads.quarkly.io/5fae1bc508b41a001fec14bc/images/4.svg?v=2020-11-14T18:34:33.374Z" />
 		</Components.Track>
 		<Section
 			padding="64px 0 64px 0"
@@ -110,7 +110,7 @@ export default (() => {
 							<Components.Comp2>
 								<Override slot="blueButton" disabled>
 									<Link
-										href="goose3"
+										href="#"
 										color="#fff"
 										text-decoration-line="initial"
 										overflow-wrap="normal"
@@ -180,7 +180,7 @@ export default (() => {
 								/>
 								<Components.BlueButton width="50%" margin="16px 0px 10px 110px" disabled>
 									<Link
-										href="goose2"
+										href="#"
 										overflow-wrap="normal"
 										word-break="normal"
 										white-space="normal"

@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Strong, Text, Box, Image } from "@quarkly/widgets";
+import { Theme, Link, Strong, Span, Text, Box, Image } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { Override, Section, Stack, StackItem, SocialMedia } from "@quarkly/components";
 import * as Components from "components";
@@ -23,18 +23,52 @@ export default (() => {
 				color="#5f5f5f"
 				width="100%"
 			>
-				<Strong>
-					Задание 3.{"  "}
+				<Strong
+					overflow-wrap="normal"
+					word-break="normal"
+					white-space="normal"
+					text-indent="0"
+					text-overflow="clip"
+					hyphens="manual"
+				>
+					Задание 4.{"  "}
 				</Strong>
-				Тренажёр
-				<Strong>
-					{" "}«
+				<Span
+					overflow-wrap="normal"
+					word-break="normal"
+					white-space="normal"
+					text-indent="0"
+					text-overflow="clip"
+					hyphens="manual"
+				>
+					Тренажёр{" "}
+				</Span>
+				<Strong
+					overflow-wrap="normal"
+					word-break="normal"
+					white-space="normal"
+					text-indent="0"
+					text-overflow="clip"
+					hyphens="manual"
+				>
+					«
 				</Strong>
-				Настройка IED на прием-передачу GOOSE-сообщений»{"  "}
+				<Span
+					overflow-wrap="normal"
+					word-break="normal"
+					white-space="normal"
+					text-indent="0"
+					text-overflow="clip"
+					hyphens="manual"
+				>
+					Настройка IED на прием-передачу GOOSE-сообщений»{"  "}
+					<br />
+					{"\n\n\n"}
+				</Span>
 			</Text>
 		</Section>
 		<Components.Track>
-			<Override slot="image" src="https://uploads.quarkly.io/5fae1bc508b41a001fec14bc/images/3.svg?v=2020-11-14T18:26:05.628Z" />
+			<Override slot="image" src="https://uploads.quarkly.io/5fae1bc508b41a001fec14bc/images/4.svg?v=2020-11-14T18:34:33.374Z" />
 		</Components.Track>
 		<Section
 			padding="64px 0 64px 0"
@@ -72,8 +106,12 @@ export default (() => {
 					>
 						<Stack margin="0 -16px -16px -16px" height="217px">
 							{"    "}
-							<Components.Comp2 />
-							<Components.Comp2 margin="10px 0px 0px 280px" />
+							<Components.Comp2>
+								<Override slot="blueButton" disabled />
+							</Components.Comp2>
+							<Components.Comp2 margin="10px 0px 0px 280px">
+								<Override slot="blueButton" disabled />
+							</Components.Comp2>
 							{"    "}
 						</Stack>
 						<Stack width="400px">

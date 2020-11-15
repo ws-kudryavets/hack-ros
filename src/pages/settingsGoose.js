@@ -31,7 +31,7 @@ export default (() => {
 					text-overflow="clip"
 					hyphens="manual"
 				>
-					Задание 3.{"  "}
+					Задание 4.{"  "}
 				</Strong>
 				<Span
 					overflow-wrap="normal"
@@ -68,7 +68,7 @@ export default (() => {
 			</Text>
 		</Section>
 		<Components.Track>
-			<Override slot="image" src="https://uploads.quarkly.io/5fae1bc508b41a001fec14bc/images/3.svg?v=2020-11-14T20:53:34.392Z" />
+			<Override slot="image" src="https://uploads.quarkly.io/5fae1bc508b41a001fec14bc/images/4.svg?v=2020-11-14T18:34:33.374Z" />
 		</Components.Track>
 		<Section
 			padding="64px 0 64px 0"
